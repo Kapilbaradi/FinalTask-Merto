@@ -1,0 +1,7 @@
+red: rgba(222, 16, 16, 1)
+footer-black: rgba(27, 31, 34, 1)
+black: rgba(0,0,0,1)
+light-gray: rgba(235, 238, 240, 1)
+ts-product-regular-price-color: rgba(129, 131, 136, 1);
+
+container-fluid: {mobile: x-10px padding, 768px: x-20px padding, 1024px: x-50px padding, 1500px: (max-width: 1300px)}

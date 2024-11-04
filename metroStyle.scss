@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$red: rgba(222, 16, 16, 1);
+$footer-black: rgba(27, 31, 34, 1);
+$light-gray: rgba(235, 238, 240, 1);
+$ts-product-regular-price-color: rgba(129, 131, 136, 1);
+
+.container {
+  margin: 0 auto !important;
+  @media screen and (max-width: 576px), (min-width: 576px) {
+    max-width: 100% !important;
+    padding: 0 10px !important;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0 20px !important;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 0 50px !important;
+  }
+  @media screen and (min-width: 1500px) {
+    padding: 10px !important;
+    max-width: 1300px !important;
+  }
+}
+
+body {
+  font-family: "Poppins" !important;
+  font-style: normal;
+}
+
+a {
+  font-size: 14px;
+}
+
+.light-grey {
+  color: $ts-product-regular-price-color;
+}
+
+.red-transition {
+  color: black;
+  font-weight: 500;
+  transition: 150ms ease;
+}
+
+@mixin hoverRedTransition() {
+  color: red;
+}
+
+input {
+  outline: 0;
+}
+
+.product-slider {
+  scroll-behavior: smooth;
+  div {
+    &:hover .red-transition {
+      @include hoverRedTransition();
+    }
+    div {
+      &:first-child {
+        &::before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.3);
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: 0.5s;
+        }
+        // &:hover::before {
+        //   opacity: 1;
+        // }
+      }
+      &:last-child {
+        top: 40%;
+        left: 45%;
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: 0.5s;
+        z-index: 99;
+      }
+    }
+    &:hover div:first-child::before {
+      opacity: 1;
+    }
+    &:hover div:last-child {
+      opacity: 1;
+      transform: translateX(5px);
+    }
+    @media screen and (768px <= width <= 991px) {
+      flex-basis: 20%;
+    }
+    @media screen and (width >= 1200px) {
+      flex-basis: calc(100% / 8);
+    }
+  }
+}
+
+footer {
+  background-color: $footer-black;
+  .light-grey-border {
+    border: 1px solid rgba(129, 131, 136, 0.3);
+  }
+  input {
+    border-radius: 5px;
+    border: 1px solid rgba(129, 131, 136, 0.3);
+    outline: none;
+    &::placeholder {
+      font-size: 13px;
+    }
+    + button {
+      top: 12%;
+      right: 2%;
+    }
+  }
+  .hoverBar {
+    position: relative;
+    width: fit-content;
+    font-size: 13px;
+    &::after {
+      content: "";
+      background-color: white;
+      width: 100%;
+      height: 0.05rem;
+      display: block;
+    }
+  }
+  .contact {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  li a,
+  p,
+  span {
+    font-size: 13px;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 600 !important;
+  }
+  p {
+    color: rgba(153, 153, 153, 1);
+  }
+  .fa-face-smile {
+    font-size: 30px !important;
+  }
+}
