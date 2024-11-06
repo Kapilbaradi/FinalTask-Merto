@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Damion&family=Fahkwang:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 $red: rgba(222, 16, 16, 1);
 $footer-black: rgba(27, 31, 34, 1);
@@ -62,6 +62,46 @@ input {
   outline: 0;
 }
 
+// -------------------------- NavBar And Header Section -----------------
+header {
+  .info-block {
+    img {
+      width: 14px;
+    }
+    span {
+      font-size: 12px;
+    }
+    i {
+      font-size: 8px;
+    }
+    .contact {
+      font-weight: 600;
+    }
+  }
+  // .nav {
+    .fa-bars,
+    .fa-magnifying-glass,
+    .fa-cart-shopping {
+      font-size: 20px;
+      outline: none;
+    }
+    .logo {
+      width: 75%;
+    }
+    .cart-no {
+      padding: 2px;
+      top: -9px;
+      right: 0;
+      width: 18px;
+      height: 18px;
+      background-color: $red;
+      font-size: 10px;
+      font-weight: bold;
+    }
+  // }
+}
+
+// ------------- Product Slider Section ----------------------
 .product-slider {
   scroll-behavior: smooth;
   div {
@@ -105,70 +145,107 @@ input {
     @media screen and (768px <= width <= 991px) {
       flex-basis: 20%;
     }
-    @media screen and (width >= 1200px) {
+    @media screen and (min-width: 1200px) {
       flex-basis: calc(100% / 8);
     }
   }
 }
 
+//  --------------------------- Ad Banner Section -------------------
+
 .ad-banner {
-  div {
+  > div {
+    @media screen and (max-width: 597px) {
+      gap: 10px;
+    }
+  }
+  .ad-card {
+    cursor: pointer;
     > div {
-      > div {
-        right: 0;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        z-index: 99;
-        p {
-          font-size: 12px;
-          color: #cf600f;
-          font-weight: 600;
-        }
-        a {
-          font-size: 12px;
-          font-weight: 600;
-          @include hoverBar {
-            border-bottom: 1px solid black;
-            width: 120%;
-          }
-        }
-        i {
-          font-size: 10px;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 99;
+      p {
+        font-size: 12px;
+        color: #cf600f;
+        font-weight: 600;
+      }
+      a {
+        font-size: 12px;
+        font-weight: 600;
+        @include hoverBar {
+          border-bottom: 1px solid black;
+          width: 120%;
         }
       }
-
-      @media screen and (width >= 768px) {
-        flex-basis: 32%;
-        h2 {
-          font-size: 14px;
-        }
+      .fa-arrow-right {
+        font-size: 13px !important;
       }
     }
-  }
-  h2 {
-    font-size: 6.5vw;
-    &:first-child {
-      font-weight: 700;
-      font-style: italic;
+    img {
+      transform: scale(1);
+      transition: 0.3s ease;
     }
-    &:nth-child(2) {
+    h2 {
+      font-size: 6.5vw;
+      &:first-child {
+        font-weight: 700;
+        font-style: italic;
+      }
+      &:nth-child(2) {
+        font-weight: 600;
+      }
+    }
+    #last-h2 {
+      font-family: "Fahkwang" !important;
       font-weight: 600;
+      font-style: normal;
     }
-  }
-  #last-h2 {
-    font-family: "Fahkwang" !important;
-    font-weight: 600;
-    font-style: normal;
-  }
 
-  span {
-    font-family: "Damion";
-    color: #FFFFFF4D;
-    letter-spacing: 1px;
-    font-size: 16vw;
+    span {
+      font-family: "Damion";
+      color: #ffffff4d;
+      letter-spacing: 1px;
+      font-size: 16vw;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      h2 {
+        font-size: 20px;
+      }
+      span {
+        font-size: 40px;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      h2 {
+        font-size: 2vw;
+      }
+      #last-h2 {
+        font-size: 1.8vw;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      h2 {
+        font-size: 28px;
+      }
+      #last-h2 {
+        font-size: 22px;
+      }
+    }
   }
 }
+
+// --------------------------------- Footer Section ------------------------
 
 footer {
   background-color: $footer-black;
@@ -178,7 +255,7 @@ footer {
     font-weight: 600 !important;
   }
   h4 {
-    @media screen and (width >= 992px) {
+    @media screen and (min-width: 992px) {
       font-size: 20px;
     }
   }
@@ -213,7 +290,7 @@ footer {
     + button {
       top: 15%;
       right: 2%;
-      @media screen and (width >= 992px) {
+      @media screen and (min-width: 992px) {
         top: 5%;
         right: 1%;
       }
@@ -222,10 +299,10 @@ footer {
   .padding-30 {
     padding: 30px;
     > div {
-      @media screen and (width >= 992px) {
+      @media screen and (min-width: 992px) {
         width: 250px;
       }
-      @media screen and (width >= 1200px) {
+      @media screen and (min-width: 1200px) {
         width: 350px;
       }
     }
@@ -236,10 +313,10 @@ footer {
       font-size: 30px;
     }
 
-    @media screen and (width >= 992px) {
+    @media screen and (min-width: 992px) {
       gap: 35px;
     }
-    @media screen and (width >= 1200px) {
+    @media screen and (min-width: 1200px) {
       gap: 20px;
     }
   }
@@ -255,7 +332,7 @@ footer {
   }
 
   .payments {
-    @media screen and (width >= 1200px) {
+    @media screen and (min-width: 1200px) {
       width: 312px;
     }
   }

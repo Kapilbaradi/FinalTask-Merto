@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./metroStyle.css" />
+    <link rel="stylesheet" href="./assests/styles/metroStyle.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,6 +24,269 @@
     />
   </head>
   <body>
+    <header>
+      <div class="d-none d-md-block bg-black py-2">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6 text-white d-flex gap-2">
+              <div class="info-block">
+                <img src="./assests/images/nav/english.png" alt="" />
+                <span>English</span>
+                <i class="fa-solid fa-chevron-down align-middle"></i>
+              </div>
+              <div class="info-block">
+                <span>USD</span>
+                <i class="fa-solid fa-chevron-down align-middle"></i>
+              </div>
+            </div>
+            <div
+              class="info-block col-6 text-white d-flex justify-content-end gap-2"
+            >
+              <span>Contact us 24/7</span>
+              <span class="contact">(+92) 3942 7879</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0">
+          <div class="row align-items-center">
+            <div class="col-4 d-md-none">
+              <button
+                class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars d-block text-start"></i>
+              </button>
+            </div>
+            <a class="col-4 col-md-2" href="#">
+              <img
+                src="./assests/images/nav/logo.png"
+                class="d-block mx-auto logo"
+            /></a>
+            <div class="d-none d-md-block col-md-5 bg-body-tertiary">
+              <div class="row align-items-center position-relative">
+                <select name="Categories" class="col-4">
+                  <option value="">All Categories</option>
+                  <option value="autopart">Autopart</option>
+                  <option value="accessories-automotive">
+                    &nbsp;&nbsp;&nbsp;Accessories
+                  </option>
+                  <option value="car-care">&nbsp;&nbsp;&nbsp;Car Care</option>
+                  <option value="car-electronics">
+                    &nbsp;&nbsp;&nbsp;Car Electronics
+                  </option>
+                  <option value="equipment">&nbsp;&nbsp;&nbsp;Equipment</option>
+                  <option value="lights">&nbsp;&nbsp;&nbsp;Lights</option>
+                  <option value="oils-fluids">
+                    &nbsp;&nbsp;&nbsp;Oils &amp; Fluids
+                  </option>
+                  <option value="tires">&nbsp;&nbsp;&nbsp;Tires</option>
+                  <option value="wheels">&nbsp;&nbsp;&nbsp;Wheels</option>
+                  <option value="beauty-health">Beauty &amp; Health</option>
+                  <option value="bags-cases">
+                    &nbsp;&nbsp;&nbsp;Bags &amp; Cases
+                  </option>
+                  <option value="bb-creams">&nbsp;&nbsp;&nbsp;BB Creams</option>
+                  <option value="body-bath">
+                    &nbsp;&nbsp;&nbsp;Body &amp; Bath
+                  </option>
+                  <option value="brushes-tools">
+                    &nbsp;&nbsp;&nbsp;Brushes &amp; Tools
+                  </option>
+                  <option value="hair-care">&nbsp;&nbsp;&nbsp;Hair Care</option>
+                  <option value="lipstick">&nbsp;&nbsp;&nbsp;Lipstick</option>
+                  <option value="makeup">&nbsp;&nbsp;&nbsp;Makeup</option>
+                  <option value="makeup-palettes">
+                    &nbsp;&nbsp;&nbsp;Makeup Palettes
+                  </option>
+                  <option value="mascara">&nbsp;&nbsp;&nbsp;Mascara</option>
+                  <option value="mask">&nbsp;&nbsp;&nbsp;Mask</option>
+                  <option value="nail-care">&nbsp;&nbsp;&nbsp;Nail Care</option>
+                  <option value="skincare">&nbsp;&nbsp;&nbsp;Skincare</option>
+                  <option value="toner">&nbsp;&nbsp;&nbsp;Toner</option>
+                  <option value="electronic">Electronic</option>
+                  <option value="product-cat-apple">
+                    &nbsp;&nbsp;&nbsp;Apple
+                  </option>
+                  <option value="camera">&nbsp;&nbsp;&nbsp;Camera</option>
+                  <option value="controller">
+                    &nbsp;&nbsp;&nbsp;Controller
+                  </option>
+                  <option value="headphones">
+                    &nbsp;&nbsp;&nbsp;Headphones
+                  </option>
+                  <option value="smartwatch">
+                    &nbsp;&nbsp;&nbsp;Smartwatch
+                  </option>
+                  <option value="speaker">&nbsp;&nbsp;&nbsp;Speaker</option>
+                  <option value="fashion">Fashion</option>
+                  <option value="men">&nbsp;&nbsp;&nbsp;Men</option>
+                  <option value="men-accessories">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessories
+                  </option>
+                  <option value="hoodies">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hoodies
+                  </option>
+                  <option value="jackets-coats">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jackets &amp; Coats
+                  </option>
+                  <option value="polo-shirts">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Polo shirts
+                  </option>
+                  <option value="shirts-men">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shirts
+                  </option>
+                  <option value="shoes-men">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoes
+                  </option>
+                  <option value="women">&nbsp;&nbsp;&nbsp;Women</option>
+                  <option value="women-accessories">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessories
+                  </option>
+                  <option value="dress">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dress
+                  </option>
+                  <option value="shirts">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shirts
+                  </option>
+                  <option value="shoes">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoes
+                  </option>
+                  <option value="shorts">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shorts
+                  </option>
+                  <option value="skirts">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skirts
+                  </option>
+                  <option value="tops">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tops
+                  </option>
+                  <option value="game-accessories">Game Accessories</option>
+                  <option value="home-decor">Home &amp; Decor</option>
+                  <option value="beds">&nbsp;&nbsp;&nbsp;Beds</option>
+                  <option value="bookcase">&nbsp;&nbsp;&nbsp;Bookcase</option>
+                  <option value="cabinets">&nbsp;&nbsp;&nbsp;Cabinets</option>
+                  <option value="chairs">&nbsp;&nbsp;&nbsp;Chairs</option>
+                  <option value="fireplaces">
+                    &nbsp;&nbsp;&nbsp;Fireplaces
+                  </option>
+                  <option value="lighting">&nbsp;&nbsp;&nbsp;Lighting</option>
+                  <option value="mirrors-clocks">
+                    &nbsp;&nbsp;&nbsp;Mirrors &amp; Clocks
+                  </option>
+                  <option value="office-furniture">
+                    &nbsp;&nbsp;&nbsp;Office Furniture
+                  </option>
+                  <option value="outdoor">&nbsp;&nbsp;&nbsp;Outdoor</option>
+                  <option value="rugs">&nbsp;&nbsp;&nbsp;Rugs</option>
+                  <option value="sectionals">
+                    &nbsp;&nbsp;&nbsp;Sectionals
+                  </option>
+                  <option value="sofas">&nbsp;&nbsp;&nbsp;Sofas</option>
+                  <option value="tables">&nbsp;&nbsp;&nbsp;Tables</option>
+                  <option value="wall-decor">
+                    &nbsp;&nbsp;&nbsp;Wall Decor
+                  </option>
+                  <option value="laptop-computer">Laptop &amp; Computer</option>
+                  <option value="computer">&nbsp;&nbsp;&nbsp;Computer</option>
+                  <option value="all-in-one">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All in One
+                  </option>
+                  <option value="laptop">&nbsp;&nbsp;&nbsp;Laptop</option>
+                  <option value="macbook">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Macbook
+                  </option>
+                  <option value="msi">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MSI
+                  </option>
+                  <option value="phone-tablet">Phone &amp; Tablet</option>
+                  <option value="tablet-accessories">
+                    &nbsp;&nbsp;&nbsp;Accessories
+                  </option>
+                  <option value="apple">&nbsp;&nbsp;&nbsp;Apple</option>
+                  <option value="huawei">&nbsp;&nbsp;&nbsp;Huawei</option>
+                  <option value="oppo">&nbsp;&nbsp;&nbsp;Oppo</option>
+                  <option value="realme">&nbsp;&nbsp;&nbsp;Realme</option>
+                  <option value="samsung">&nbsp;&nbsp;&nbsp;Samsung</option>
+                  <option value="smartphone">
+                    &nbsp;&nbsp;&nbsp;Smartphone
+                  </option>
+                  <option value="tablet">&nbsp;&nbsp;&nbsp;Tablet</option>
+                  <option value="xiaomi">&nbsp;&nbsp;&nbsp;Xiaomi</option>
+                  <option value="tv-audio-video">TV, Audio - Video</option>
+                </select>
+                <input type="text" placeholder="Search for products" class="col-8"/>
+                <button class="bg-black text-white rounded d-inline-block p-1 position-absolute top-0 start-100 border-0">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-4 d-flex gap-4 justify-content-end col-md-3">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <div class="position-relative d-flex">
+                <i class="fa-solid fa-cart-shopping d-block me-2"></i>
+                <span
+                  class="cart-no position-absolute text-white rounded-circle text-center"
+                  >0</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ------------------------- Product Slider ---------------------------- -->
     <div class="container wrapper">
       <div class="product-slider slider row overflow-x-hidden flex-nowrap">
         <div
@@ -198,43 +461,64 @@
     </div>
     <!-- ----------------------- Ad Banner -------------------  -->
     <div class="ad-banner container">
-      <div class="row py-3 gap-2 mx-md-0">
-        <div class="col-12 position-relative rounded overflow-hidden px-0">
-          <a href="#" class="w-100 text-decoration-none">
+      <div class="row py-3 mx-md-0">
+        <div
+          class="ad-card col-12 position-relative rounded overflow-hidden col-md-4 px-md-1 col-lg-3 px-lg-2"
+        >
+          <a
+            href="#"
+            class="text-decoration-none d-block overflow-hidden rounded h-100"
+          >
             <img
               src="./assests/images/7/banner3-mobile-demo1.jpg"
               alt="car"
-              class="img-fluid d-block rounded"
+              class="img-fluid d-block d-lg-none"
+            />
+            <img
+              src="./assests/images/7/banner3-demo1-screen.jpg"
+              alt="car"
+              class="img-fluid d-none d-lg-block h-100"
             />
           </a>
           <div
             class="position-absolute d-flex align-items-end justify-content-center"
           >
-            <div class="col-8 p-4 col-md-12">
+            <div class="col-8 p-4 col-md-11 col-xl-12 col-xxl-11">
               <h2 class="col-12 text-white text-uppercase text-center">
                 SALE 10% OFF TIRES MICHELIN
               </h2>
             </div>
           </div>
         </div>
-        <div class="col-12 position-relative rounded overflow-hidden px-0">
-          <a href="#" class="w-100 text-decoration-none">
+        <div
+          class="ad-card col-12 position-relative rounded overflow-hidden col-md-4 px-md-1 col-lg-6 px-lg-2"
+        >
+          <a
+            href="#"
+            class="text-decoration-none d-block overflow-hidden rounded"
+          >
             <img
               src="./assests/images/7/banner4-mobile-demo1.jpg"
               alt="car"
-              class="img-fluid d-block rounded"
+              class="img-fluid d-block d-lg-none"
+            />
+            <img
+              src="./assests/images/7/banner4-demo1-screen.jpg"
+              alt="car"
+              class="img-fluid d-none d-lg-block h-100"
             />
           </a>
-          <div
-            class="position-absolute d-flex justify-content-center"
-          >
+          <div class="position-absolute d-flex justify-content-center">
             <div class="col-12 p-4">
               <p class="col-12 text-center mb-0">NEW COLLECTION</p>
-              <h2 class="col-12 text-black text-center">
-                Sofa Crafted in UK
-              </h2>
-              <div class="col-12 mx-auto d-flex justify-content-center align-items-center gap-1">
-                <a href="" class="col-12 d-block text-black text-decoration-none">
+              <h2 class="col-12 text-black text-center">Sofa Crafted in UK</h2>
+              <div
+                class="col-12 mx-auto d-flex justify-content-center align-items-center gap-1"
+              >
+                <a
+                  href=""
+                  class="col-12 d-block text-black text-decoration-none"
+                >
                   Shop now
                 </a>
                 <i class="fa-solid fa-arrow-right text-black"></i>
@@ -242,12 +526,22 @@
             </div>
           </div>
         </div>
-        <div class="col-12 position-relative rounded overflow-hidden px-0">
-          <a href="#" class="w-100 text-decoration-none">
+        <div
+          class="ad-card col-12 position-relative rounded overflow-hidden col-md-4 px-md-1 col-lg-3 px-lg-2"
+        >
+          <a
+            href="#"
+            class="text-decoration-none d-block overflow-hidden rounded h-100"
+          >
             <img
               src="./assests/images/7/banner5-mobile-demo1.jpg"
               alt="car"
-              class="img-fluid d-block rounded"
+              class="img-fluid d-block d-lg-none"
+            />
+            <img
+              src="./assests/images/7/banner5-demo1-screen.jpg"
+              alt="car"
+              class="img-fluid d-none d-lg-block h-100"
             />
           </a>
           <div
@@ -298,14 +592,16 @@
           class="row justify-content-center mx-0 mb-5 pt-lg-1 mt-lg-5 px-lg-0"
         >
           <div
-            class="col-12 col-xl-4 d-xl-flex flex-xl-column order-xl-4 align-items-xl-end px-xl-0"
+            class="col-12 mb-4 my-md-5 mb-lg-4 mt-lg-3 col-xl-4 d-xl-flex flex-xl-column order-xl-4 align-items-xl-end px-xl-0"
           >
             <h4
-              class="col-12 text-white p-0 mb-4 text-lg-center mb-lg-4 col-xl-10 text-xl-start"
+              class="col-12 text-white p-0 mb-4 text-md-center mb-lg-4 col-xl-10 text-xl-start"
             >
               Let's keep in touch
             </h4>
-            <div class="col-12 px-0 col-md-8 position-relative col-xl-10">
+            <div
+              class="col-12 px-0 position-relative col-md-8 mx-md-auto col-xl-10"
+            >
               <input
                 type="text"
                 placeholder="enter your email address"

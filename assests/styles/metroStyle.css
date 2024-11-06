@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Damion&family=Fahkwang:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .container {
   margin: 0 auto !important;
 }
@@ -48,6 +48,38 @@ input {
   outline: 0;
 }
 
+header .info-block img {
+  width: 14px;
+}
+header .info-block span {
+  font-size: 12px;
+}
+header .info-block i {
+  font-size: 8px;
+}
+header .info-block .contact {
+  font-weight: 600;
+}
+header .fa-bars,
+header .fa-magnifying-glass,
+header .fa-cart-shopping {
+  font-size: 20px;
+  outline: none;
+}
+header .logo {
+  width: 75%;
+}
+header .cart-no {
+  padding: 2px;
+  top: -9px;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(222, 16, 16);
+  font-size: 10px;
+  font-weight: bold;
+}
+
 .product-slider {
   scroll-behavior: smooth;
 }
@@ -86,25 +118,33 @@ input {
     flex-basis: 20%;
   }
 }
-@media screen and (width >= 1200px) {
+@media screen and (min-width: 1200px) {
   .product-slider div {
     flex-basis: 12.5%;
   }
 }
 
-.ad-banner div > div > div {
+@media screen and (max-width: 597px) {
+  .ad-banner > div {
+    gap: 10px;
+  }
+}
+.ad-banner .ad-card {
+  cursor: pointer;
+}
+.ad-banner .ad-card > div {
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
   z-index: 99;
 }
-.ad-banner div > div > div p {
+.ad-banner .ad-card > div p {
   font-size: 12px;
   color: #cf600f;
   font-weight: 600;
 }
-.ad-banner div > div > div a {
+.ad-banner .ad-card > div a {
   font-size: 12px;
   font-weight: 600;
   position: relative;
@@ -112,44 +152,67 @@ input {
   width: fit-content;
   font-size: 13px;
 }
-.ad-banner div > div > div a::after {
+.ad-banner .ad-card > div a::after {
   content: "";
   width: 100%;
   display: block;
   border-bottom: 1px solid black;
   width: 120%;
 }
-.ad-banner div > div > div i {
-  font-size: 10px;
+.ad-banner .ad-card > div .fa-arrow-right {
+  font-size: 13px !important;
 }
-@media screen and (width >= 768px) {
-  .ad-banner div > div {
-    flex-basis: 32%;
-  }
-  .ad-banner div > div h2 {
-    font-size: 14px;
-  }
+.ad-banner .ad-card img {
+  transform: scale(1);
+  transition: 0.3s ease;
 }
-.ad-banner h2 {
+.ad-banner .ad-card h2 {
   font-size: 6.5vw;
 }
-.ad-banner h2:first-child {
+.ad-banner .ad-card h2:first-child {
   font-weight: 700;
   font-style: italic;
 }
-.ad-banner h2:nth-child(2) {
+.ad-banner .ad-card h2:nth-child(2) {
   font-weight: 600;
 }
-.ad-banner #last-h2 {
+.ad-banner .ad-card #last-h2 {
   font-family: "Fahkwang" !important;
   font-weight: 600;
   font-style: normal;
 }
-.ad-banner span {
+.ad-banner .ad-card span {
   font-family: "Damion";
   color: rgba(255, 255, 255, 0.3019607843);
   letter-spacing: 1px;
   font-size: 16vw;
+}
+.ad-banner .ad-card:hover img {
+  transform: scale(1.2);
+}
+@media screen and (min-width: 768px) {
+  .ad-banner .ad-card h2 {
+    font-size: 20px;
+  }
+  .ad-banner .ad-card span {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ad-banner .ad-card h2 {
+    font-size: 2vw;
+  }
+  .ad-banner .ad-card #last-h2 {
+    font-size: 1.8vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ad-banner .ad-card h2 {
+    font-size: 28px;
+  }
+  .ad-banner .ad-card #last-h2 {
+    font-size: 22px;
+  }
 }
 
 footer {
@@ -159,7 +222,7 @@ footer h3 {
   font-size: 15px;
   font-weight: 600 !important;
 }
-@media screen and (width >= 992px) {
+@media screen and (min-width: 992px) {
   footer h4 {
     font-size: 20px;
   }
@@ -198,7 +261,7 @@ footer input + button {
   top: 15%;
   right: 2%;
 }
-@media screen and (width >= 992px) {
+@media screen and (min-width: 992px) {
   footer input + button {
     top: 5%;
     right: 1%;
@@ -207,12 +270,12 @@ footer input + button {
 footer .padding-30 {
   padding: 30px;
 }
-@media screen and (width >= 992px) {
+@media screen and (min-width: 992px) {
   footer .padding-30 > div {
     width: 250px;
   }
 }
-@media screen and (width >= 1200px) {
+@media screen and (min-width: 1200px) {
   footer .padding-30 > div {
     width: 350px;
   }
@@ -223,12 +286,12 @@ footer .padding-30 a {
 footer .padding-30 i {
   font-size: 30px;
 }
-@media screen and (width >= 992px) {
+@media screen and (min-width: 992px) {
   footer .padding-30 {
     gap: 35px;
   }
 }
-@media screen and (width >= 1200px) {
+@media screen and (min-width: 1200px) {
   footer .padding-30 {
     gap: 20px;
   }
@@ -249,7 +312,7 @@ footer .contact {
   font-size: 18px;
   font-weight: 600;
 }
-@media screen and (width >= 1200px) {
+@media screen and (min-width: 1200px) {
   footer .payments {
     width: 312px;
   }
