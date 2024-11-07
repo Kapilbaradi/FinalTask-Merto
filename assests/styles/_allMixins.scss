@@ -1,0 +1,26 @@
+@mixin hoverBar {
+  position: relative;
+  width: fit-content;
+  font-size: 13px;
+  &::after {
+    content: "";
+    width: 100%;
+    display: block;
+    @content;
+  }
+}
+
+@mixin hoverRedTransition() {
+  color: red;
+}
+
+@mixin setBadge($width, $heigth, $top, $right) {
+  padding: 2px;
+  top: $top;
+  right: $right;
+  width: $width;
+  height: $heigth;
+  background-color: $red;
+  font-size: 10px;
+  font-weight: bold;
+}
