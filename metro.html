@@ -48,30 +48,35 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid px-0">
-          <div class="row align-items-center">
-            <div class="col-4 d-md-none">
-              <button
-                class="navbar-toggler border-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i class="fa-solid fa-bars d-block text-start"></i>
-              </button>
-            </div>
-            <a class="col-4 col-md-2" href="#">
-              <img
-                src="./assests/images/nav/logo.png"
-                class="d-block mx-auto logo"
-            /></a>
-            <div class="d-none d-md-block col-md-5 bg-body-tertiary">
-              <div class="row align-items-center position-relative">
-                <select name="Categories" class="col-4">
+      <div class="contaienr">
+        <div class="header row align-items-center p-md-3">
+          <div class="col-4 d-md-none">
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasId"
+              aria-controls="offcanvasWithBothOptions"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars d-block text-start"></i>
+            </button>
+          </div>
+          <a class="col-4 col-md-2" href="#">
+            <img
+              src="./assests/images/nav/logo.png"
+              class="d-block mx-auto logo"
+          /></a>
+          <div class="d-none d-md-block col-md-8">
+            <div
+              class="search row align-items-center position-relative justify-content-center"
+            >
+              <div class="col-4 rounded-start-1 pe-0 position-relative">
+                <select
+                  name="Categories"
+                  class="col-12 border-0 rounded-start-1"
+                >
                   <option value="">All Categories</option>
                   <option value="autopart">Autopart</option>
                   <option value="accessories-automotive">
@@ -221,71 +226,169 @@
                   <option value="xiaomi">&nbsp;&nbsp;&nbsp;Xiaomi</option>
                   <option value="tv-audio-video">TV, Audio - Video</option>
                 </select>
-                <input type="text" placeholder="Search for products" class="col-8"/>
-                <button class="bg-black text-white rounded d-inline-block p-1 position-absolute top-0 start-100 border-0">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+                <i
+                  class="fa-solid fa-chevron-down d-block position-absolute"
+                ></i>
               </div>
-            </div>
-            <div class="col-4 d-flex gap-4 justify-content-end col-md-3">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <div class="position-relative d-flex">
-                <i class="fa-solid fa-cart-shopping d-block me-2"></i>
-                <span
-                  class="cart-no position-absolute text-white rounded-circle text-center"
-                  >0</span
-                >
-              </div>
+              <input
+                type="text"
+                placeholder="Search for products"
+                class="col-7 border-0 rounded-end-1"
+              />
+              <button
+                class="bg-black text-white rounded d-inline-block position-absolute border-0 p-0 text-center"
+              >
+                <i class="fa-solid fa-magnifying-glass d-block"></i>
+              </button>
             </div>
           </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
+          <div
+            class="col-4 d-flex gap-3 justify-content-end align-items-center col-md-2"
+          >
+            <i class="fa-solid fa-magnifying-glass d-md-none"></i>
+            <i class="fa-regular fa-user d-none d-md-block"></i>
+            <div class="d-none d-md-block position-relative d-flex">
+              <i class="fa-regular fa-heart"></i>
+              <span
+                class="cart-no position-absolute text-white rounded-circle text-center"
+                >0</span
+              >
+            </div>
+            <div class="position-relative d-flex">
+              <i class="fa-solid fa-cart-shopping d-block me-2"></i>
+              <span
+                class="cart-no position-absolute text-white rounded-circle text-center"
+                >0</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="text-body-tertiary my-0" />
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasId"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header p-0">
+              <button class="bg-black h-100 p-3 border-0" type="button">
+                <i class="fa-solid fa-bars d-block text-white"></i>
               </button>
-            </form>
+              <h5
+                class="offcanvas-title text-uppercase mx-auto text-center"
+                id="offcanvasWithBothOptionsLabel"
+              >
+                Shop By Categories +
+              </h5>
+              <button
+                type="button"
+                class="btn-close me-1 ms-0"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active d-flex justify-content-between"
+                    aria-current="page"
+                    href="#"
+                    ><span>HomePage</span> <span>+</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex justify-content-between" href="#">
+                    <span>Categories</span> <span>+</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex justify-content-between" href="#">
+                    <span>Products</span> <span>+</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex justify-content-between" href="#">
+                    <span>Pages</span> <span>+</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> <span>About us</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> <span>Blog</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span
+                      ><i class="fa-solid fa-percent d-inline-block me-1"></i
+                      >Best Discount</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex justify-content-between" href="#">
+                    <span class="text-body-tertiary">Recently viewed</span>
+                    <span class="text-body-tertiary">+</span></a
+                  >
+                </li>
+                <hr class="bg-body-tertiary" />
+                <div class="d-md-none">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"
+                      ><span class="text-body-tertiary"
+                        ><i class="fa-regular fa-heart"></i>
+                      </span>
+                      <span class="text-body-tertiary">Wishlist (0)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link d-flex align-items-end" href="#"
+                      ><span class="text-body-tertiary"
+                        ><i class="fa-regular fa-user d-inline-block me-1"></i>
+                      </span>
+                      <span class="text-body-tertiary">Account</span></a
+                    >
+                  </li>
+                </div>
+                <hr class="bg-body-tertiary" />
+                <div class="d-md-none d-flex gap-3 flex-wrap countries">
+                  <li class="nav-item">
+                    <a class="nav-link info-block" href="#">
+                      <img src="./assests/images/nav/english.png" alt="" />
+                      <span>English</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link info-block" href="#">
+                      <img src="./assests/images/nav/flags/logo.png" alt="" />
+                      <span>Espanol</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link info-block" href="#">
+                      <img src="./assests/images/nav/flags/francais.png" alt="" />
+                      <span>Francais</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link info-block" href="#">
+                      <img src="./assests/images/nav/flags/portugues.png" alt="" />
+                      <span>Portuges</span>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
+
     <!-- ------------------------- Product Slider ---------------------------- -->
     <div class="container wrapper">
       <div class="product-slider slider row overflow-x-hidden flex-nowrap">
