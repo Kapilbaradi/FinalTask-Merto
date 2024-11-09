@@ -106,7 +106,7 @@ header .search button {
   right: 5%;
 }
 header .logo {
-  width: 75%;
+  width: 90%;
 }
 header hr {
   width: 100%;
@@ -129,23 +129,77 @@ header .cart-no {
   font-size: 10px;
   font-weight: bold;
 }
-header .offcanvas-start {
+header .offcanvas {
   width: 85% !important;
 }
-header .offcanvas-start .offcanvas-header {
+header .offcanvas .offcanvas-header {
   background-color: #ebeff0;
 }
-header .offcanvas-start .offcanvas-header h5,
+header .offcanvas .offcanvas-header h5 {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 18px !important;
+}
+header .offcanvas .offcanvas-header select {
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  flex-basis: 33%;
+}
+header .offcanvas .offcanvas-header .btn-close {
+  border-left: 2px solid white;
+  font-size: 12px;
+}
+header .offcanvas .search {
+  border-radius: 5px;
+}
+header .offcanvas .search input,
+header .offcanvas .search select {
+  background-color: #ebeef0;
+  font-size: 12px;
+  padding: 14px 20px;
+}
+header .offcanvas .search select {
+  font-weight: 600;
+  cursor: pointer;
+  flex-basis: 33%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-right: 1px solid #a5a5a5 !important;
+}
+header .offcanvas .search .fa-chevron-down {
+  top: 40%;
+  right: 20%;
+  font-size: 10px;
+  font-weight: 600;
+}
+header .offcanvas .search input {
+  font-weight: 500;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+header .offcanvas .search input::-moz-placeholder {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+header .offcanvas .search input::placeholder {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+header .offcanvas .search button {
+  width: 40px;
+  height: 85%;
+  top: 7.5%;
+  right: 1%;
+}
 header .offcanvas-start .offcanvas-header .fa-bars {
   font-size: 14px;
   font-weight: 600;
 }
-header .offcanvas-start .offcanvas-header button,
-header .offcanvas-start .offcanvas-header h5 {
+header .offcanvas-start .offcanvas-header button {
   padding: 14px 18px !important;
-}
-header .offcanvas-start .offcanvas-header .btn-close {
-  border-left: 2px solid white;
 }
 header .offcanvas-start .nav-item span {
   font-size: 14px;
@@ -161,14 +215,30 @@ header .offcanvas-start .nav-item .active span {
 header .offcanvas-start .countries span {
   font-weight: normal;
 }
+header .categories {
+  gap: 5px;
+}
+header .categories a {
+  font-size: 13px;
+  border: 1px solid rgba(165, 165, 165, 0.3) !important;
+  padding: 4px 20px;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   header .logo {
-    width: 100%;
+    width: 80%;
   }
   header .fa-cart-shopping,
   header .fa-heart,
   header .fa-user {
     font-size: 19px;
+  }
+  header .offcanvas .search button {
+    right: 5%;
+  }
+  header .offcanvas .search input {
+    background-color: #ebeef0;
+    border: none;
   }
 }
 
