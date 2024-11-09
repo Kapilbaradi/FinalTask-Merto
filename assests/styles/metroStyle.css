@@ -63,48 +63,6 @@ header .info-block .contact {
 header .header {
   padding: 12px 16px;
 }
-header .search {
-  border-radius: 5px;
-}
-header .search input,
-header .search select {
-  background-color: #ebeef0;
-  font-size: 12px;
-  padding: 14px 20px;
-}
-header .search select {
-  font-weight: 600;
-  cursor: pointer;
-  flex-basis: 33%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-right: 1px solid #a5a5a5 !important;
-}
-header .search .fa-chevron-down {
-  top: 40%;
-  right: 20%;
-  font-size: 10px;
-  font-weight: 600;
-}
-header .search input {
-  font-weight: 500;
-  background-color: #ebeef0;
-}
-header .search input::-moz-placeholder {
-  font-size: 12px;
-  color: #a5a5a5;
-}
-header .search input::placeholder {
-  font-size: 12px;
-  color: #a5a5a5;
-}
-header .search button {
-  width: 40px;
-  height: 85%;
-  top: 7.5%;
-  right: 5%;
-}
 header .logo {
   width: 90%;
 }
@@ -112,7 +70,6 @@ header hr {
   width: 100%;
 }
 header .fa-bars,
-header .fa-magnifying-glass,
 header .fa-cart-shopping,
 header .fa-heart,
 header .fa-user {
@@ -128,6 +85,9 @@ header .cart-no {
   background-color: rgb(222, 16, 16);
   font-size: 10px;
   font-weight: bold;
+}
+header #navOne {
+  padding: 12px 20px;
 }
 header .offcanvas {
   width: 85% !important;
@@ -166,13 +126,21 @@ header .offcanvas .search select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-right: 1px solid #a5a5a5 !important;
 }
 header .offcanvas .search .fa-chevron-down {
   top: 40%;
-  right: 20%;
+  right: 15%;
   font-size: 10px;
   font-weight: 600;
+}
+header .offcanvas .search .v-bar::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  background-color: rgba(165, 165, 165, 0.7);
 }
 header .offcanvas .search input {
   font-weight: 500;
@@ -181,11 +149,11 @@ header .offcanvas .search input {
   border-radius: 5px;
 }
 header .offcanvas .search input::-moz-placeholder {
-  font-size: 12px;
+  font-size: 13px;
   color: #a5a5a5;
 }
 header .offcanvas .search input::placeholder {
-  font-size: 12px;
+  font-size: 13px;
   color: #a5a5a5;
 }
 header .offcanvas .search button {
@@ -193,6 +161,10 @@ header .offcanvas .search button {
   height: 85%;
   top: 7.5%;
   right: 1%;
+}
+header .offcanvas .search .fa-magnifying-glass {
+  font-size: 16px;
+  outline: none;
 }
 header .offcanvas-start .offcanvas-header .fa-bars {
   font-size: 14px;
@@ -225,6 +197,9 @@ header .categories a {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
+  header #navOne {
+    padding: 20px;
+  }
   header .logo {
     width: 80%;
   }
@@ -233,13 +208,22 @@ header .categories a {
   header .fa-user {
     font-size: 19px;
   }
-  header .offcanvas .search button {
-    right: 5%;
-  }
   header .offcanvas .search input {
     background-color: #ebeef0;
     border: none;
   }
+}
+
+.carousel [data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  border: 1px solid white !important;
+}
+.carousel [data-bs-target]:not(.active) {
+  background-color: transparent !important;
+}
+.carousel .carousel-item h5 {
+  transition: 0.5s ease;
 }
 
 .product-slider {
