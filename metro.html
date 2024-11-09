@@ -48,7 +48,7 @@
           </div>
         </div>
       </div>
-      <div class="contaienr">
+      <!-- <div class="contaienr">
         <div class="header row align-items-center p-md-3">
           <div class="col-4 d-md-none">
             <button
@@ -263,9 +263,537 @@
             </div>
           </div>
         </div>
-      </div>
-      <hr class="text-body-tertiary my-0" />
-      <nav class="navbar navbar-expand-md">
+      </div> -->
+      <nav class="navbar navbar-expand-md" id="navOne">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasId"
+            aria-controls="offcanvasWithBothOptions"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars d-block text-start"></i>
+          </button>
+          <a class="navbar-brand col-3 ms-5 col-md-2 ms-md-0" href="#">
+            <img
+              src="./assests/images/nav/logo.png"
+              class="d-block mx-auto logo"
+            />
+          </a>
+          <div class="d-flex align-items-center gap-2 pe-2 d-md-none">
+            <button
+              class="btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+            >
+              <i class="fa-solid fa-magnifying-glass d-block"></i>
+            </button>
+            <div class="position-relative d-flex">
+              <i class="fa-solid fa-cart-shopping d-block me-2"></i>
+              <span
+                class="cart-no position-absolute text-white rounded-circle text-center"
+                >0</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-end"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <div class="offcanvas-header p-0">
+              <h5
+                class="offcanvas-title col-10"
+                id="offcanvasWithBothOptionsLabel"
+              >
+                <select
+                  name="Categories"
+                  class="col-12 border-0 rounded-start-1"
+                >
+                  <option value="">All Categories</option>
+                  <option value="autopart">Autopart</option>
+                  <option value="accessories-automotive">
+                    &nbsp;&nbsp;&nbsp;Accessories
+                  </option>
+                  <option value="car-care">&nbsp;&nbsp;&nbsp;Car Care</option>
+                  <option value="car-electronics">
+                    &nbsp;&nbsp;&nbsp;Car Electronics
+                  </option>
+                  <option value="equipment">&nbsp;&nbsp;&nbsp;Equipment</option>
+                  <option value="lights">&nbsp;&nbsp;&nbsp;Lights</option>
+                  <option value="oils-fluids">
+                    &nbsp;&nbsp;&nbsp;Oils &amp; Fluids
+                  </option>
+                  <option value="tires">&nbsp;&nbsp;&nbsp;Tires</option>
+                  <option value="wheels">&nbsp;&nbsp;&nbsp;Wheels</option>
+                  <option value="beauty-health">Beauty &amp; Health</option>
+                  <option value="bags-cases">
+                    &nbsp;&nbsp;&nbsp;Bags &amp; Cases
+                  </option>
+                  <option value="bb-creams">&nbsp;&nbsp;&nbsp;BB Creams</option>
+                  <option value="body-bath">
+                    &nbsp;&nbsp;&nbsp;Body &amp; Bath
+                  </option>
+                  <option value="brushes-tools">
+                    &nbsp;&nbsp;&nbsp;Brushes &amp; Tools
+                  </option>
+                  <option value="hair-care">&nbsp;&nbsp;&nbsp;Hair Care</option>
+                  <option value="lipstick">&nbsp;&nbsp;&nbsp;Lipstick</option>
+                  <option value="makeup">&nbsp;&nbsp;&nbsp;Makeup</option>
+                  <option value="makeup-palettes">
+                    &nbsp;&nbsp;&nbsp;Makeup Palettes
+                  </option>
+                  <option value="mascara">&nbsp;&nbsp;&nbsp;Mascara</option>
+                  <option value="mask">&nbsp;&nbsp;&nbsp;Mask</option>
+                  <option value="nail-care">&nbsp;&nbsp;&nbsp;Nail Care</option>
+                  <option value="skincare">&nbsp;&nbsp;&nbsp;Skincare</option>
+                  <option value="toner">&nbsp;&nbsp;&nbsp;Toner</option>
+                  <option value="electronic">Electronic</option>
+                  <option value="product-cat-apple">
+                    &nbsp;&nbsp;&nbsp;Apple
+                  </option>
+                  <option value="camera">&nbsp;&nbsp;&nbsp;Camera</option>
+                  <option value="controller">
+                    &nbsp;&nbsp;&nbsp;Controller
+                  </option>
+                  <option value="headphones">
+                    &nbsp;&nbsp;&nbsp;Headphones
+                  </option>
+                  <option value="smartwatch">
+                    &nbsp;&nbsp;&nbsp;Smartwatch
+                  </option>
+                  <option value="speaker">&nbsp;&nbsp;&nbsp;Speaker</option>
+                  <option value="fashion">Fashion</option>
+                  <option value="men">&nbsp;&nbsp;&nbsp;Men</option>
+                  <option value="men-accessories">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessories
+                  </option>
+                  <option value="hoodies">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hoodies
+                  </option>
+                  <option value="jackets-coats">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jackets &amp; Coats
+                  </option>
+                  <option value="polo-shirts">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Polo shirts
+                  </option>
+                  <option value="shirts-men">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shirts
+                  </option>
+                  <option value="shoes-men">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoes
+                  </option>
+                  <option value="women">&nbsp;&nbsp;&nbsp;Women</option>
+                  <option value="women-accessories">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessories
+                  </option>
+                  <option value="dress">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dress
+                  </option>
+                  <option value="shirts">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shirts
+                  </option>
+                  <option value="shoes">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoes
+                  </option>
+                  <option value="shorts">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shorts
+                  </option>
+                  <option value="skirts">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skirts
+                  </option>
+                  <option value="tops">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tops
+                  </option>
+                  <option value="game-accessories">Game Accessories</option>
+                  <option value="home-decor">Home &amp; Decor</option>
+                  <option value="beds">&nbsp;&nbsp;&nbsp;Beds</option>
+                  <option value="bookcase">&nbsp;&nbsp;&nbsp;Bookcase</option>
+                  <option value="cabinets">&nbsp;&nbsp;&nbsp;Cabinets</option>
+                  <option value="chairs">&nbsp;&nbsp;&nbsp;Chairs</option>
+                  <option value="fireplaces">
+                    &nbsp;&nbsp;&nbsp;Fireplaces
+                  </option>
+                  <option value="lighting">&nbsp;&nbsp;&nbsp;Lighting</option>
+                  <option value="mirrors-clocks">
+                    &nbsp;&nbsp;&nbsp;Mirrors &amp; Clocks
+                  </option>
+                  <option value="office-furniture">
+                    &nbsp;&nbsp;&nbsp;Office Furniture
+                  </option>
+                  <option value="outdoor">&nbsp;&nbsp;&nbsp;Outdoor</option>
+                  <option value="rugs">&nbsp;&nbsp;&nbsp;Rugs</option>
+                  <option value="sectionals">
+                    &nbsp;&nbsp;&nbsp;Sectionals
+                  </option>
+                  <option value="sofas">&nbsp;&nbsp;&nbsp;Sofas</option>
+                  <option value="tables">&nbsp;&nbsp;&nbsp;Tables</option>
+                  <option value="wall-decor">
+                    &nbsp;&nbsp;&nbsp;Wall Decor
+                  </option>
+                  <option value="laptop-computer">Laptop &amp; Computer</option>
+                  <option value="computer">&nbsp;&nbsp;&nbsp;Computer</option>
+                  <option value="all-in-one">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All in One
+                  </option>
+                  <option value="laptop">&nbsp;&nbsp;&nbsp;Laptop</option>
+                  <option value="macbook">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Macbook
+                  </option>
+                  <option value="msi">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MSI
+                  </option>
+                  <option value="phone-tablet">Phone &amp; Tablet</option>
+                  <option value="tablet-accessories">
+                    &nbsp;&nbsp;&nbsp;Accessories
+                  </option>
+                  <option value="apple">&nbsp;&nbsp;&nbsp;Apple</option>
+                  <option value="huawei">&nbsp;&nbsp;&nbsp;Huawei</option>
+                  <option value="oppo">&nbsp;&nbsp;&nbsp;Oppo</option>
+                  <option value="realme">&nbsp;&nbsp;&nbsp;Realme</option>
+                  <option value="samsung">&nbsp;&nbsp;&nbsp;Samsung</option>
+                  <option value="smartphone">
+                    &nbsp;&nbsp;&nbsp;Smartphone
+                  </option>
+                  <option value="tablet">&nbsp;&nbsp;&nbsp;Tablet</option>
+                  <option value="xiaomi">&nbsp;&nbsp;&nbsp;Xiaomi</option>
+                  <option value="tv-audio-video">TV, Audio - Video</option>
+                </select>
+              </h5>
+              <button
+                type="button"
+                class="btn-close col-1 mx-auto ps-4"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <div>
+                    <div
+                      class="search d-flex flex-wrap align-items-center position-relative justify-content-center"
+                    >
+                      <div
+                        class="d-none d-md-inline-block col-md-4 rounded-start-1 pe-0 position-relative"
+                      >
+                        <select
+                          name="Categories"
+                          class="col-12 border-0 rounded-start-1"
+                        >
+                          <option value="">All Categories</option>
+                          <option value="autopart">Autopart</option>
+                          <option value="accessories-automotive">
+                            &nbsp;&nbsp;&nbsp;Accessories
+                          </option>
+                          <option value="car-care">
+                            &nbsp;&nbsp;&nbsp;Car Care
+                          </option>
+                          <option value="car-electronics">
+                            &nbsp;&nbsp;&nbsp;Car Electronics
+                          </option>
+                          <option value="equipment">
+                            &nbsp;&nbsp;&nbsp;Equipment
+                          </option>
+                          <option value="lights">
+                            &nbsp;&nbsp;&nbsp;Lights
+                          </option>
+                          <option value="oils-fluids">
+                            &nbsp;&nbsp;&nbsp;Oils &amp; Fluids
+                          </option>
+                          <option value="tires">&nbsp;&nbsp;&nbsp;Tires</option>
+                          <option value="wheels">
+                            &nbsp;&nbsp;&nbsp;Wheels
+                          </option>
+                          <option value="beauty-health">
+                            Beauty &amp; Health
+                          </option>
+                          <option value="bags-cases">
+                            &nbsp;&nbsp;&nbsp;Bags &amp; Cases
+                          </option>
+                          <option value="bb-creams">
+                            &nbsp;&nbsp;&nbsp;BB Creams
+                          </option>
+                          <option value="body-bath">
+                            &nbsp;&nbsp;&nbsp;Body &amp; Bath
+                          </option>
+                          <option value="brushes-tools">
+                            &nbsp;&nbsp;&nbsp;Brushes &amp; Tools
+                          </option>
+                          <option value="hair-care">
+                            &nbsp;&nbsp;&nbsp;Hair Care
+                          </option>
+                          <option value="lipstick">
+                            &nbsp;&nbsp;&nbsp;Lipstick
+                          </option>
+                          <option value="makeup">
+                            &nbsp;&nbsp;&nbsp;Makeup
+                          </option>
+                          <option value="makeup-palettes">
+                            &nbsp;&nbsp;&nbsp;Makeup Palettes
+                          </option>
+                          <option value="mascara">
+                            &nbsp;&nbsp;&nbsp;Mascara
+                          </option>
+                          <option value="mask">&nbsp;&nbsp;&nbsp;Mask</option>
+                          <option value="nail-care">
+                            &nbsp;&nbsp;&nbsp;Nail Care
+                          </option>
+                          <option value="skincare">
+                            &nbsp;&nbsp;&nbsp;Skincare
+                          </option>
+                          <option value="toner">&nbsp;&nbsp;&nbsp;Toner</option>
+                          <option value="electronic">Electronic</option>
+                          <option value="product-cat-apple">
+                            &nbsp;&nbsp;&nbsp;Apple
+                          </option>
+                          <option value="camera">
+                            &nbsp;&nbsp;&nbsp;Camera
+                          </option>
+                          <option value="controller">
+                            &nbsp;&nbsp;&nbsp;Controller
+                          </option>
+                          <option value="headphones">
+                            &nbsp;&nbsp;&nbsp;Headphones
+                          </option>
+                          <option value="smartwatch">
+                            &nbsp;&nbsp;&nbsp;Smartwatch
+                          </option>
+                          <option value="speaker">
+                            &nbsp;&nbsp;&nbsp;Speaker
+                          </option>
+                          <option value="fashion">Fashion</option>
+                          <option value="men">&nbsp;&nbsp;&nbsp;Men</option>
+                          <option value="men-accessories">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessories
+                          </option>
+                          <option value="hoodies">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hoodies
+                          </option>
+                          <option value="jackets-coats">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jackets &amp;
+                            Coats
+                          </option>
+                          <option value="polo-shirts">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Polo shirts
+                          </option>
+                          <option value="shirts-men">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shirts
+                          </option>
+                          <option value="shoes-men">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoes
+                          </option>
+                          <option value="women">&nbsp;&nbsp;&nbsp;Women</option>
+                          <option value="women-accessories">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accessories
+                          </option>
+                          <option value="dress">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dress
+                          </option>
+                          <option value="shirts">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shirts
+                          </option>
+                          <option value="shoes">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoes
+                          </option>
+                          <option value="shorts">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shorts
+                          </option>
+                          <option value="skirts">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skirts
+                          </option>
+                          <option value="tops">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tops
+                          </option>
+                          <option value="game-accessories">
+                            Game Accessories
+                          </option>
+                          <option value="home-decor">Home &amp; Decor</option>
+                          <option value="beds">&nbsp;&nbsp;&nbsp;Beds</option>
+                          <option value="bookcase">
+                            &nbsp;&nbsp;&nbsp;Bookcase
+                          </option>
+                          <option value="cabinets">
+                            &nbsp;&nbsp;&nbsp;Cabinets
+                          </option>
+                          <option value="chairs">
+                            &nbsp;&nbsp;&nbsp;Chairs
+                          </option>
+                          <option value="fireplaces">
+                            &nbsp;&nbsp;&nbsp;Fireplaces
+                          </option>
+                          <option value="lighting">
+                            &nbsp;&nbsp;&nbsp;Lighting
+                          </option>
+                          <option value="mirrors-clocks">
+                            &nbsp;&nbsp;&nbsp;Mirrors &amp; Clocks
+                          </option>
+                          <option value="office-furniture">
+                            &nbsp;&nbsp;&nbsp;Office Furniture
+                          </option>
+                          <option value="outdoor">
+                            &nbsp;&nbsp;&nbsp;Outdoor
+                          </option>
+                          <option value="rugs">&nbsp;&nbsp;&nbsp;Rugs</option>
+                          <option value="sectionals">
+                            &nbsp;&nbsp;&nbsp;Sectionals
+                          </option>
+                          <option value="sofas">&nbsp;&nbsp;&nbsp;Sofas</option>
+                          <option value="tables">
+                            &nbsp;&nbsp;&nbsp;Tables
+                          </option>
+                          <option value="wall-decor">
+                            &nbsp;&nbsp;&nbsp;Wall Decor
+                          </option>
+                          <option value="laptop-computer">
+                            Laptop &amp; Computer
+                          </option>
+                          <option value="computer">
+                            &nbsp;&nbsp;&nbsp;Computer
+                          </option>
+                          <option value="all-in-one">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All in One
+                          </option>
+                          <option value="laptop">
+                            &nbsp;&nbsp;&nbsp;Laptop
+                          </option>
+                          <option value="macbook">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Macbook
+                          </option>
+                          <option value="msi">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MSI
+                          </option>
+                          <option value="phone-tablet">
+                            Phone &amp; Tablet
+                          </option>
+                          <option value="tablet-accessories">
+                            &nbsp;&nbsp;&nbsp;Accessories
+                          </option>
+                          <option value="apple">&nbsp;&nbsp;&nbsp;Apple</option>
+                          <option value="huawei">
+                            &nbsp;&nbsp;&nbsp;Huawei
+                          </option>
+                          <option value="oppo">&nbsp;&nbsp;&nbsp;Oppo</option>
+                          <option value="realme">
+                            &nbsp;&nbsp;&nbsp;Realme
+                          </option>
+                          <option value="samsung">
+                            &nbsp;&nbsp;&nbsp;Samsung
+                          </option>
+                          <option value="smartphone">
+                            &nbsp;&nbsp;&nbsp;Smartphone
+                          </option>
+                          <option value="tablet">
+                            &nbsp;&nbsp;&nbsp;Tablet
+                          </option>
+                          <option value="xiaomi">
+                            &nbsp;&nbsp;&nbsp;Xiaomi
+                          </option>
+                          <option value="tv-audio-video">
+                            TV, Audio - Video
+                          </option>
+                        </select>
+                        <i
+                          class="fa-solid fa-chevron-down d-block position-absolute"
+                        ></i>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Search for products"
+                        class="col-12 col-md-8"
+                      />
+                      <button
+                        class="bg-black text-white rounded d-inline-block position-absolute border-0 p-0 text-center"
+                      >
+                        <i class="fa-solid fa-magnifying-glass d-block"></i>
+                      </button>
+                    </div>
+                    <div class="categories col-12 d-flex flex-wrap pt-4 d-md-none">
+                      <a
+                        href="#"
+                        class="rounded text-decoration-none text-black"
+                        >smartphone</a
+                      >
+                      <a
+                        href="#"
+                        class="rounded text-decoration-none text-black"
+                        >tablet</a
+                      >
+                      <a
+                        href="#"
+                        class="rounded text-decoration-none text-black"
+                        >controller</a
+                      >
+                      <a
+                        href="#"
+                        class="rounded text-decoration-none text-black"
+                        >furniture</a
+                      >
+                      <a
+                        href="#"
+                        class="rounded text-decoration-none text-black"
+                        >laptop</a
+                      >
+                      <a
+                        href="#"
+                        class="rounded text-decoration-none text-black"
+                        >playstation</a
+                      >
+                      <a
+                        href="#"
+                        class="rounded text-decoration-none text-black"
+                        >womens fashion</a
+                      >
+                      <a
+                        href="#"
+                        class="rounded text-decoration-none text-black"
+                        >home & decor</a
+                      >
+                      <a
+                        href="#"
+                        class="rounded text-decoration-none text-black"
+                        >camera</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item d-flex align-items-center ms-auto">
+                  <div
+                    class="d-none d-md-flex gap-3 justify-content-end align-items-center col-md"
+                  >
+                    <i class="fa-solid fa-magnifying-glass d-md-none"></i>
+                    <i class="fa-regular fa-user d-none d-md-block"></i>
+                    <div class="d-none d-md-block position-relative d-flex">
+                      <i class="fa-regular fa-heart"></i>
+                      <span
+                        class="cart-no position-absolute text-white rounded-circle text-center"
+                        >0</span
+                      >
+                    </div>
+                    <div class="position-relative d-flex">
+                      <i class="fa-solid fa-cart-shopping d-block me-2"></i>
+                      <span
+                        class="cart-no position-absolute text-white rounded-circle text-center"
+                        >0</span
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <hr class="d-none d-md-block text-body-tertiary my-0" />
+      <nav class="navbar navbar-expand-md" id="navTwo">
         <div class="container-fluid">
           <div
             class="offcanvas offcanvas-start"
@@ -356,11 +884,13 @@
                   </li>
                 </div>
                 <hr class="bg-body-tertiary" />
-                <div class="d-md-none d-flex gap-3 flex-wrap countries">
+                <div
+                  class="countries d-md-none d-flex column-gap-3 flex-wrap align-content-center"
+                >
                   <li class="nav-item">
                     <a class="nav-link info-block" href="#">
                       <img src="./assests/images/nav/english.png" alt="" />
-                      <span>English</span>
+                      <span class="border-bottom border-black">English</span>
                     </a>
                   </li>
                   <li class="nav-item">
@@ -371,14 +901,39 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link info-block" href="#">
-                      <img src="./assests/images/nav/flags/francais.png" alt="" />
+                      <img
+                        src="./assests/images/nav/flags/francais.png"
+                        alt=""
+                      />
                       <span>Francais</span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link info-block" href="#">
-                      <img src="./assests/images/nav/flags/portugues.png" alt="" />
+                    <a class="nav-link info-block py-0" href="#">
+                      <img
+                        src="./assests/images/nav/flags/portugues.png"
+                        alt=""
+                      />
                       <span>Portuges</span>
+                    </a>
+                  </li>
+                </div>
+                <div
+                  class="countries d-md-none d-flex column-gap-3 flex-wrap align-content-center"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link info-block" href="#">
+                      <span class="border-bottom border-black">USD</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link info-block" href="#">
+                      <span>EUR</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link info-block" href="#">
+                      <span>BRL</span>
                     </a>
                   </li>
                 </div>
