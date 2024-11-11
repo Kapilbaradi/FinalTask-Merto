@@ -25,7 +25,7 @@
   </head>
   <body>
     <header>
-      <div class="d-none d-md-block bg-black py-2">
+      <div class="d-none d-md-block bg-black py-2 d-xl-none">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-6 text-white d-flex gap-2">
@@ -50,7 +50,7 @@
       </div>
 
       <nav class="navbar navbar-expand-md" id="navOne">
-        <div class="container-fluid px-0">
+        <div class="container">
           <button
             class="navbar-toggler border-0"
             type="button"
@@ -65,7 +65,7 @@
           <a class="navbar-brand col-3 ms-5 col-md-2 ms-md-0 me-md-4" href="#">
             <img
               src="./assests/images/nav/logo.png"
-              class="d-block mx-auto logo mx-md-0"
+              class="d-block w-100 mx-auto mx-md-0"
             />
           </a>
           <div class="d-flex align-items-center gap-2 pe-2 d-md-none">
@@ -265,10 +265,25 @@
                 <li class="nav-item col-md-12">
                   <div class="col-md-12">
                     <div
-                      class="search bg-body-tertiary d-flex flex-wrap align-items-center position-relative justify-content-center col-md-12"
+                      class="search d-flex flex-wrap align-items-center position-relative justify-content-center col-md-12 justify-content-lg-end justify-content-xl-start ps-xl-5"
                     >
+                      <div class="row nav-contact align-items-center gap-3">
+                        <div class="col-1">
+                          <i
+                            class="fa-solid fa-phone col-12 text-black px-0"
+                          ></i>
+                        </div>
+                        <div class="col-9">
+                          <a
+                            href="tel:+9239427879"
+                            class="col-12 text-decoration-none text-black"
+                            ><span class="d-block">Contact us 24/7</span
+                            ><span>(+92) 3942 7879</span></a
+                          >
+                        </div>
+                      </div>
                       <div
-                        class="v-bar d-none d-md-inline-block rounded-start-1 pe-0 position-relative col-md-4"
+                        class="v-bar d-none d-md-inline-block rounded-start-1 pe-0 position-relative col-md-4 col-lg-3"
                       >
                         <select
                           name="Categories"
@@ -501,7 +516,9 @@
                         <i class="fa-solid fa-magnifying-glass d-block"></i>
                       </button>
                     </div>
-                    <div class="categories col-12 d-flex flex-wrap pt-4 d-md-none">
+                    <div
+                      class="categories col-12 d-flex flex-wrap pt-4 d-md-none"
+                    >
                       <a
                         href="#"
                         class="rounded text-decoration-none text-black"
@@ -574,32 +591,101 @@
                 </li> -->
               </ul>
               <div
-                    class="d-none d-md-flex gap-3 justify-content-end align-items-center col-md-3"
-                  >
-                    <i class="fa-solid fa-magnifying-glass d-md-none"></i>
-                    <i class="fa-regular fa-user d-none d-md-block"></i>
-                    <div class="d-none d-md-block position-relative d-flex">
-                      <i class="fa-regular fa-heart"></i>
-                      <span
-                        class="cart-no position-absolute text-white rounded-circle text-center"
-                        >0</span
-                      >
-                    </div>
-                    <div class="position-relative d-flex">
-                      <i class="fa-solid fa-cart-shopping d-block me-2"></i>
-                      <span
-                        class="cart-no position-absolute text-white rounded-circle text-center"
-                        >0</span
-                      >
-                    </div>
+                class="d-none d-md-flex gap-3 justify-content-end align-items-center col-md-3 col-xl-4"
+              >
+                <div class="d-none d-xl-inline-block">
+                  <div class="dropdown info-block">
+                    <a
+                      href="#"
+                      class="text-decoration-none text-black"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="./assests/images/nav/english.png" alt="" />
+                      <span>English</span>
+                      <i class="fa-solid fa-chevron-down align-middle"></i>
+                    </a>
+                    <ul class="dropdown-menu border-body-tertiary py-4">
+                      <li>
+                        <a class="dropdown-item px-4" href="#">
+                          <img
+                            src="./assests/images/nav/flags/logo.png"
+                            alt=""
+                          />
+                          <span>Espanol</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item px-4" href="#"
+                          ><img
+                            src="./assests/images/nav/flags/francais.png"
+                            alt=""
+                          />
+                          <span>Francais</span></a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item px-4" href="#"
+                          ><img
+                            src="./assests/images/nav/flags/portugues.png"
+                            alt=""
+                          />
+                          <span>Portuges</span></a
+                        >
+                      </li>
+                    </ul>
                   </div>
+                </div>
+                <div class="d-none d-xl-inline-block me-xl-4">
+                  <div class="dropdown info-block">
+                    <a
+                      href="#"
+                      class="text-decoration-none text-black"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span>USD</span>
+                      <i class="fa-solid fa-chevron-down align-middle"></i>
+                    </a>
+                    <ul class="dropdown-menu py-4">
+                      <li><a class="dropdown-item px-4" href="#">ERU</a></li>
+                      <li>
+                        <a class="dropdown-item px-4" href="#">BRL</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <i class="fa-solid fa-magnifying-glass d-md-none"></i>
+                <div>
+                  <i
+                    class="fa-regular fa-user d-none d-md-inline-block me-lg-1"
+                  ></i>
+                  <span class="account align-middle">Account</span>
+                </div>
+                <div class="d-none d-md-block position-relative d-flex me-lg-1">
+                  <i class="fa-regular fa-heart"></i>
+                  <span
+                    class="cart-no position-absolute text-white rounded-circle text-center"
+                    >0</span
+                  >
+                </div>
+                <div class="position-relative d-flex">
+                  <i class="fa-solid fa-cart-shopping d-block me-2"></i>
+                  <span
+                    class="cart-no position-absolute text-white rounded-circle text-center"
+                    >0</span
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
       <hr class="d-none d-md-block text-body-tertiary my-0" />
-      <nav class="navbar navbar-expand-md" id="navTwo">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-md py-lg-2" id="navTwo">
+        <div class="container">
           <div
             class="offcanvas offcanvas-start"
             data-bs-scroll="true"
@@ -625,29 +711,333 @@
               ></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav me-auto mb-2 align-items-md-center mb-md-0">
+                <li class="nav-item d-none d-md-block me-1">
+                  <button
+                    class="nav-link ps-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#sideBarOffcanvas"
+                    aria-controls="offcanvasScrolling"
+                  >
+                    <i
+                      class="fa-solid fa-bars d-inline-block text-black me-lg-1"
+                    ></i>
+                    <span
+                      class="d-none d-lg-inline-block text-black text-uppercase"
+                      >Shop by categories</span
+                    >
+                  </button>
+                </li>
                 <li class="nav-item">
                   <a
                     class="nav-link active d-flex justify-content-between"
                     aria-current="page"
                     href="#"
-                    ><span>HomePage</span> <span class="d-md-none">+</span></a
+                    ><span>Homepages</span> <span class="d-md-none">+</span
+                    ><span class="d-none d-md-block ms-1"
+                      ><i class="fa-solid fa-angle-down align-middle"></i></span
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-flex justify-content-between"
+                    href="#"
+                    data-mdb-dropdown-init
+                    class="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
                   >
+                    <span>Categories</span> <span class="d-md-none">+</span
+                    ><span class="d-none d-md-block ms-1"
+                      ><i class="fa-solid fa-angle-down align-middle"></i
+                    ></span>
+                    <div
+                      class="dropdown-menu w-100 mt-0"
+                      aria-labelledby="navbarDropdown"
+                      style="
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                      "
+                    >
+                      <div class="container fluid">
+                        <div class="row my-4">
+                          <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                            <div class="list-group list-group-flush">
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Lorem ipsum</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Dolor sit</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Amet consectetur</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Cras justo odio</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Adipisicing elit</a
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                            <div class="list-group list-group-flush">
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Explicabo voluptas</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Perspiciatis quo</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Cras justo odio</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Laudantium maiores</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Provident dolor</a
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                            <div class="list-group list-group-flush">
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Iste quaerato</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Cras justo odio</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Est iure</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Praesentium</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Laboriosam</a
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3">
+                            <div class="list-group list-group-flush">
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Cras justo odio</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Saepe</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Vel alias</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Sunt doloribus</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Cum dolores</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link d-flex justify-content-between" href="#">
-                    <span>Categories</span> <span class="d-md-none">+</span></a
-                  >
+                    <span>Products</span> <span class="d-md-none">+</span
+                    ><span class="d-none d-md-block ms-1"
+                      ><i class="fa-solid fa-angle-down align-middle"></i></span
+                  ></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link d-flex justify-content-between" href="#">
-                    <span>Products</span> <span class="d-md-none">+</span></a
+                <li class="nav-item dropdown dropdown-hover position-static">
+                  <a
+                    class="nav-link d-flex justify-content-between"
+                    href="#"
+                    data-mdb-dropdown-init
+                    class="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link d-flex justify-content-between" href="#">
-                    <span>Pages</span> <span class="d-md-none">+</span></a
-                  >
+                    <span>Pages</span> <span class="d-md-none">+</span
+                    ><span class="d-none d-md-block ms-1"
+                      ><i class="fa-solid fa-angle-down align-middle"></i
+                    ></span>
+                    <!-- Mega menu -->
+                    <div
+                      class="dropdown-menu w-100 mt-0"
+                      aria-labelledby="navbarDropdown"
+                      style="
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                      "
+                    >
+                      <div class="container fluid">
+                        <div class="row my-4">
+                          <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                            <div class="list-group list-group-flush">
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Lorem ipsum</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Dolor sit</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Amet consectetur</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Cras justo odio</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Adipisicing elit</a
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                            <div class="list-group list-group-flush">
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Explicabo voluptas</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Perspiciatis quo</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Cras justo odio</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Laudantium maiores</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Provident dolor</a
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                            <div class="list-group list-group-flush">
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Iste quaerato</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Cras justo odio</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Est iure</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Praesentium</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Laboriosam</a
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3">
+                            <div class="list-group list-group-flush">
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Cras justo odio</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Saepe</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Vel alias</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Sunt doloribus</a
+                              >
+                              <a
+                                href=""
+                                class="list-group-item list-group-item-action"
+                                >Cum dolores</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"> <span>About us</span></a>
@@ -748,37 +1138,233 @@
         </div>
       </nav>
     </header>
+    <!-- --------------- SideBar ---------------------- -->
+    <div id="sidebar" class="sideBar position-fixed top-0 start-0 bottom-0">
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="sideBarOffcanvas"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-header bg-black">
+          <i class="fa-solid fa-bars d-inline-block text-white"></i>
+          <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">
+            Shop by categories
+          </h5>
+        </div>
+        <div class="offcanvas-body p-0">
+          <ul class="px-0">
+            <li class="list-unstyled px-3">
+              <a
+                href="#"
+                class="d-block col-12 px-1 py-3 text-decoration-none text-black d-flex align-items-center"
+              >
+                <span class="d-inline-block me-3"
+                  ><img
+                    src="./assests/images/sidebar/icon-menu-1.png"
+                    alt=""
+                    class="w-100"
+                /></span>
+                <span>Fashion</span>
+                <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
+              </a>
+            </li>
+            <li class="list-unstyled px-3">
+              <a
+                href="#"
+                class="d-block col-12 px-1 py-3 text-decoration-none text-black d-flex align-items-center"
+              >
+                <span class="d-inline-block me-3"
+                  ><img
+                    src="./assests/images/sidebar/icon-menu-2.png"
+                    alt=""
+                    class="w-100"
+                /></span>
+                <span>Phone & Tablet</span>
+                <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
+              </a>
+            </li>
+            <li class="list-unstyled px-3">
+              <a
+                href="#"
+                class="d-block col-12 px-1 py-3 text-decoration-none text-black d-flex align-items-center"
+              >
+                <span class="d-inline-block me-3"
+                  ><img
+                    src="./assests/images/sidebar/icon-menu-3.png"
+                    alt=""
+                    class="w-100"
+                /></span>
+                <span>Laptop & Computer</span>
+                <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
+              </a>
+            </li>
+            <li class="list-unstyled px-3">
+              <a
+                href="#"
+                class="d-block col-12 px-1 py-3 text-decoration-none text-black d-flex align-items-center"
+              >
+                <span class="d-inline-block me-3"
+                  ><img
+                    src="./assests/images/sidebar/icon-menu-4.png"
+                    alt=""
+                    class="w-100"
+                /></span>
+                <span>Tv, Audio - Video</span>
+                <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
+              </a>
+            </li>
+            <li class="list-unstyled px-3">
+              <a
+                href="#"
+                class="d-block col-12 px-1 py-3 text-decoration-none text-black d-flex align-items-center"
+              >
+                <span class="d-inline-block me-3"
+                  ><img
+                    src="./assests/images/sidebar/icon-menu-5.png"
+                    alt=""
+                    class="w-100"
+                /></span>
+                <span>Camera & Photo</span>
+              </a>
+            </li>
+            <li class="list-unstyled px-3">
+              <a
+                href="#"
+                class="d-block col-12 px-1 py-3 text-decoration-none text-black d-flex align-items-center"
+              >
+                <span class="d-inline-block me-3"
+                  ><img
+                    src="./assests/images/sidebar/icon-menu-6.png"
+                    alt=""
+                    class="w-100"
+                /></span>
+                <span>Home & Decore</span>
+                <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
+              </a>
+            </li>
+            <li class="list-unstyled px-3">
+              <a
+                href="#"
+                class="d-block col-12 px-1 py-3 text-decoration-none text-black d-flex align-items-center"
+              >
+                <span class="d-inline-block me-3"
+                  ><img
+                    src="./assests/images/sidebar/icon-menu-7.png"
+                    alt=""
+                    class="w-100"
+                /></span>
+                <span>Beauty & Health</span>
+                <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
+              </a>
+            </li>
+            <li class="list-unstyled px-3">
+              <a
+                href="#"
+                class="d-block col-12 px-1 py-3 text-decoration-none text-black d-flex align-items-center"
+              >
+                <span class="d-inline-block me-3"
+                  ><img
+                    src="./assests/images/sidebar/icon-menu-8.png"
+                    alt=""
+                    class="w-100"
+                /></span>
+                <span>Game Accessories</span>
+              </a>
+            </li>
+            <li class="list-unstyled px-3">
+              <a
+                href="#"
+                class="d-block col-12 px-1 py-3 text-decoration-none text-black d-flex align-items-center"
+              >
+                <span class="d-inline-block me-3"
+                  ><img
+                    src="./assests/images/sidebar/icon-menu-9.png"
+                    alt=""
+                    class="w-100"
+                /></span>
+                <span>Autopart</span>
+                <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- ---------------- Banner Section ----------------------- -->
-     <div class="container-fluid p-0">
+    <!-- <div class="container-fluid p-0">
       <div class="row">
         <div class="col-12">
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="rounded-circle" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="rounded-circle" aria-label="Slide 3"></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active rounded-circle"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                class="rounded-circle"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                class="rounded-circle"
+                aria-label="Slide 3"
+              ></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assests/images/banner-section/slide1-demo1.jpg" class="d-block w-100" alt="...">
+                <img
+                  src="./assests/images/banner-section/slide1-demo1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
                 <div class="carousel-caption">
                   <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assests/images/banner-section/slide2-demo1.jpg" class="d-block w-100" alt="...">
+                <img
+                  src="./assests/images/banner-section/slide2-demo1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
                 <div class="carousel-caption">
                   <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assests/images/banner-section/slide3-demo1.png" class="d-block w-100" alt="...">
+                <img
+                  src="./assests/images/banner-section/slide3-demo1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
                 <div class="carousel-caption">
                   <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
                 </div>
               </div>
             </div>
@@ -786,7 +1372,7 @@
         </div>
         <div class="col-12"></div>
       </div>
-     </div>
+    </div> -->
 
     <!-- ------------------------- Product Slider ---------------------------- -->
     <div class="container wrapper">
@@ -961,6 +1547,7 @@
         </div>
       </div>
     </div>
+
     <!-- ----------------------- Ad Banner -------------------  -->
     <div class="ad-banner container">
       <div class="row py-3 mx-md-0">
@@ -1059,6 +1646,7 @@
         </div>
       </div>
     </div>
+
     <footer>
       <div class="container">
         <div class="row">
