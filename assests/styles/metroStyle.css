@@ -63,56 +63,10 @@ header .info-block .contact {
 header .header {
   padding: 12px 16px;
 }
-header .search {
-  border-radius: 5px;
-}
-header .search input,
-header .search select {
-  background-color: #ebeef0;
-  font-size: 12px;
-  padding: 14px 20px;
-}
-header .search select {
-  font-weight: 600;
-  cursor: pointer;
-  flex-basis: 33%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-right: 1px solid #a5a5a5 !important;
-}
-header .search .fa-chevron-down {
-  top: 40%;
-  right: 20%;
-  font-size: 10px;
-  font-weight: 600;
-}
-header .search input {
-  font-weight: 500;
-  background-color: #ebeef0;
-}
-header .search input::-moz-placeholder {
-  font-size: 12px;
-  color: #a5a5a5;
-}
-header .search input::placeholder {
-  font-size: 12px;
-  color: #a5a5a5;
-}
-header .search button {
-  width: 40px;
-  height: 85%;
-  top: 7.5%;
-  right: 5%;
-}
-header .logo {
-  width: 90%;
-}
 header hr {
   width: 100%;
 }
 header .fa-bars,
-header .fa-magnifying-glass,
 header .fa-cart-shopping,
 header .fa-heart,
 header .fa-user {
@@ -166,13 +120,21 @@ header .offcanvas .search select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-right: 1px solid #a5a5a5 !important;
 }
 header .offcanvas .search .fa-chevron-down {
   top: 40%;
-  right: 20%;
+  right: 15%;
   font-size: 10px;
   font-weight: 600;
+}
+header .offcanvas .search .v-bar::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  background-color: rgba(165, 165, 165, 0.7);
 }
 header .offcanvas .search input {
   font-weight: 500;
@@ -181,11 +143,11 @@ header .offcanvas .search input {
   border-radius: 5px;
 }
 header .offcanvas .search input::-moz-placeholder {
-  font-size: 12px;
+  font-size: 13px;
   color: #a5a5a5;
 }
 header .offcanvas .search input::placeholder {
-  font-size: 12px;
+  font-size: 13px;
   color: #a5a5a5;
 }
 header .offcanvas .search button {
@@ -193,6 +155,10 @@ header .offcanvas .search button {
   height: 85%;
   top: 7.5%;
   right: 1%;
+}
+header .offcanvas .search .fa-magnifying-glass {
+  font-size: 16px;
+  outline: none;
 }
 header .offcanvas-start .offcanvas-header .fa-bars {
   font-size: 14px;
@@ -206,7 +172,7 @@ header .offcanvas-start .nav-item span {
   font-weight: 600;
   color: black;
 }
-header .offcanvas-start .nav-item span i {
+header .offcanvas-start .nav-item i {
   font-size: 14px;
 }
 header .offcanvas-start .nav-item .active span {
@@ -224,22 +190,156 @@ header .categories a {
   padding: 4px 20px;
   cursor: pointer;
 }
+header #navTwo {
+  padding: 2px 0;
+}
+header #navTwo ul {
+  gap: 3px;
+}
+header .fa-cart-shopping,
+header .fa-heart,
+header .fa-user {
+  font-size: 19px;
+}
+header .offcanvas .search input {
+  background-color: #ebeef0;
+  border: none;
+}
+header .offcanvas-start .nav-item span {
+  font-size: 13px;
+  font-weight: 500;
+}
+header .offcanvas-start .nav-item span i {
+  font-size: 10px;
+}
+@media screen and (max-width: 767px) {
+  header #navTwo {
+    padding: 0;
+  }
+  header .navbar-brand {
+    width: 86px !important;
+  }
+}
 @media screen and (min-width: 768px) {
-  header .logo {
-    width: 80%;
+  header .offcanvas .search input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
-  header .fa-cart-shopping,
-  header .fa-heart,
-  header .fa-user {
-    font-size: 19px;
+  header #navOne {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
+  header #navOne .navbar-brand {
+    width: 100px !important;
+  }
+}
+@media screen and (min-width: 992px) {
   header .offcanvas .search button {
-    right: 5%;
+    right: 0.5%;
+  }
+  header .offcanvas .search select,
+  header .offcanvas .search input {
+    font-size: 13px;
+  }
+  header .offcanvas .search select {
+    font-weight: 500;
+  }
+  header .offcanvas .search .fa-chevron-down {
+    top: 37%;
+    right: 14%;
   }
   header .offcanvas .search input {
-    background-color: #ebeef0;
-    border: none;
+    flex-basis: 62%;
   }
+  header #navTwo ul {
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .fa-cart, header .fa-user, header .fa-heart {
+    font-size: 22px;
+  }
+  header #navOne {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  header #navOne .nav-contact i {
+    font-size: 30px;
+  }
+  header #navOne .nav-contact span {
+    font-size: 13px;
+  }
+  header #navOne .nav-contact span:last-child {
+    font-weight: 600;
+  }
+  header #navOne .navbar-brand {
+    width: 120px !important;
+  }
+  header #navOne .account {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  header .info-block span {
+    font-size: 13px;
+  }
+  header .info-block img {
+    width: 18px;
+  }
+  header .offcanvas .search .v-bar {
+    flex-basis: 23%;
+  }
+  header .offcanvas .search input {
+    flex-basis: 40%;
+  }
+  header .offcanvas .search button {
+    right: 9.5%;
+  }
+  header .offcanvas .dropdown:hover .dropdown-menu {
+    display: inline-block;
+    top: 61px;
+    left: -40px !important;
+  }
+}
+
+.sideBar {
+  z-index: 999;
+}
+.sideBar .offcanvas {
+  width: 35vw !important;
+}
+.sideBar .offcanvas .offcanvas-header {
+  padding: 5px 20px;
+}
+.sideBar .offcanvas .offcanvas-header i,
+.sideBar .offcanvas .offcanvas-header h5 {
+  padding: 13px 5px;
+}
+.sideBar .offcanvas .offcanvas-header h5 {
+  font-size: 14px;
+}
+.sideBar .offcanvas .offcanvas-body li {
+  border-bottom: 1px solid rgba(165, 165, 165, 0.3);
+}
+.sideBar .offcanvas .offcanvas-body li span {
+  font-weight: 500;
+}
+.sideBar .offcanvas .offcanvas-body li span:first-child {
+  width: 20px;
+}
+.sideBar .offcanvas .offcanvas-body li i {
+  font-size: 10px;
+}
+
+.carousel [data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  border: 1px solid white !important;
+}
+.carousel [data-bs-target]:not(.active) {
+  background-color: transparent !important;
+}
+.carousel .carousel-item h5 {
+  transition: 0.5s ease;
 }
 
 .product-slider {
@@ -275,7 +375,7 @@ header .categories a {
   opacity: 1;
   transform: translateX(5px);
 }
-@media screen and (768px <= width <= 991px) {
+@media screen and (min-width: 768px), (max-width: 991px) {
   .product-slider div {
     flex-basis: 20%;
   }
