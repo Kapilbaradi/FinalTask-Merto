@@ -2,6 +2,8 @@ const wrapper = document.querySelector(".wrapper");
 const slider = document.querySelector(".slider");
 const firstCardWidth = slider.children[0].offsetWidth; // offsetWidth =  element width with padding and border
 const sliderChildren = [...slider.children];
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 var isDraggable = false,
   startX,

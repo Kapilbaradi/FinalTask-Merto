@@ -56,7 +56,7 @@ header {
       font-size: 8px;
     }
     .contact {
-      font-weight: 600;
+      @include fw-600;
     }
   }
   .header {
@@ -83,12 +83,12 @@ header {
       background-color: #ebeff0;
       h5 {
         font-size: 14px;
-        font-weight: 600;
+        @include fw-600;
         padding: 14px 18px !important;
       }
       select {
         background-color: transparent;
-        font-weight: 600;
+        @include fw-600;
         cursor: pointer;
         flex-basis: 33%;
       }
@@ -106,7 +106,7 @@ header {
         padding: 14px 20px;
       }
       select {
-        font-weight: 600;
+        @include fw-600;
         cursor: pointer;
         flex-basis: 33%;
         appearance: none;
@@ -115,7 +115,7 @@ header {
         top: 40%;
         right: 15%;
         font-size: 10px;
-        font-weight: 600;
+        @include fw-600;
       }
       .v-bar {
         &::before {
@@ -142,7 +142,7 @@ header {
         width: 40px;
         height: 85%;
         top: 7.5%;
-        right: 1%;
+        right: 5px;
       }
       .fa-magnifying-glass {
         font-size: 16px;
@@ -155,7 +155,7 @@ header {
     .offcanvas-header {
       .fa-bars {
         font-size: 14px;
-        font-weight: 600;
+        @include fw-600;
       }
       button {
         padding: 14px 18px !important;
@@ -163,9 +163,51 @@ header {
     }
 
     .nav-item {
+      padding-top: 0.3215rem;
+      padding-bottom: 0.3215rem;
+      .dropdown-menu {
+        position: absolute !important;
+        top: 12px !important;
+        left: 0;
+        border: none;
+        border-radius: none;
+        padding: 45px !important;
+        li {
+          margin: 10px 0;
+          font-size: 14px;
+          a {
+            font-size: 14px;
+            @include redHover;
+          }
+          .heading {
+            @include fw-600;
+            margin-top: 0;
+          }
+        }
+      }
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: black;
+          span {
+            &:hover {
+              @include redHover;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        .dropdown-menu {
+          display: block !important;
+          margin-top: 0 !important;
+          transform: translate(0, 40px) !important;
+        }
+      }
       span {
         font-size: 14px;
-        font-weight: 600;
+        @include fw-600;
         color: black;
       }
       i {
@@ -174,6 +216,24 @@ header {
       .active {
         span {
           color: $red;
+        }
+      }
+      .categories {
+        @include fw-600;
+      }
+    }
+
+    .product {
+      .dropdown-menu {
+        width: 320px !important;
+        padding: 40px 25px !important;
+        left: -50%;
+        top: 9px !important;
+        li {
+          margin: 15px 0;
+          a {
+            font-size: 13px;
+          }
         }
       }
     }
@@ -200,11 +260,35 @@ header {
     ul {
       gap: 3px;
     }
+    .discount {
+      @include setBadge(40px, "fit-content", 0, 100%);
+      left: 0;
+      border-radius: 4px;
+      font-size: 12px;
+      @include fw-600;
+    }
+    .viewed-product {
+      button[data-bs-toggle="tooltip"] {
+        width: 40px !important;
+        opacity: 0;
+        &:hover {
+          background-color: black;
+          color: white !important;
+        }
+      }
+      &:hover {
+        button[data-bs-toggle="tooltip"] {
+          transition: 0.3s all calc(0.1s + 0.1s * var(--i));
+          opacity: 1;
+        }
+      }
+    }
   }
   .fa-cart-shopping,
   .fa-heart,
   .fa-user {
     font-size: 19px;
+    @include redHover;
   }
   .offcanvas {
     .search {
@@ -256,9 +340,6 @@ header {
   @media screen and (min-width: 992px) {
     .offcanvas {
       .search {
-        button {
-          right: 0.5%;
-        }
         select,
         input {
           font-size: 13px;
@@ -268,11 +349,14 @@ header {
         }
         .fa-chevron-down {
           top: 37%;
-          right: 14%;
+          right: 10%;
         }
         input {
           flex-basis: 62%;
         }
+      }
+      .recent {
+        color: black !important;
       }
     }
     #navTwo {
@@ -283,7 +367,9 @@ header {
   }
 
   @media screen and (min-width: 1200px) {
-    .fa-cart, .fa-user, .fa-heart {
+    .fa-cart,
+    .fa-user,
+    .fa-heart {
       font-size: 22px;
     }
     #navOne {
@@ -296,7 +382,7 @@ header {
         span {
           font-size: 13px;
           &:last-child {
-            font-weight: 600;
+            @include fw-600;
           }
         }
       }
@@ -305,7 +391,7 @@ header {
       }
       .account {
         font-size: 12px;
-        font-weight: 600;
+        @include fw-600;
       }
     }
     .info-block {
@@ -319,22 +405,41 @@ header {
     .offcanvas {
       .search {
         .v-bar {
-          flex-basis: 23%;
+          flex-basis: 25%;
         }
         input {
           flex-basis: 40%;
         }
-        button {
-          right: 9.5%;
-        }
+      }
+      .shop {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
       }
       .dropdown {
-        &:hover .dropdown-menu{
+        &:hover .dropdown-menu {
           display: inline-block;
           top: 61px;
-          left: -40px!important;
+          left: -40px !important;
         }
       }
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    #navTwo ul {
+      gap: 25px;
+    }
+    .offcanvas-start {
+      .nav-item {
+        .nav-cate {
+          padding: 45px 300px !important;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1500px) {
+    .container {
+      padding: 0px 100px !important;
+      max-width: 100% !important;
+      margin: 0 !important;
     }
   }
 }
@@ -342,7 +447,7 @@ header {
 .sideBar {
   z-index: 999;
   .offcanvas {
-    width: 35vw !important;
+    width: 269px !important;
     .offcanvas-header {
       padding: 5px 20px;
       i,
@@ -356,6 +461,15 @@ header {
     .offcanvas-body {
       li {
         border-bottom: 1px solid rgba(165, 165, 165, 0.3);
+        &:hover {
+          .text {
+            border-bottom: 1px solid black;
+          }
+          .dropend {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
         span {
           &:first-child {
             width: 20px;
@@ -364,6 +478,82 @@ header {
         }
         i {
           font-size: 10px;
+        }
+      }
+      .dropend {
+        width: 460px;
+        height: 100vh;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 330px;
+        padding: 30px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease;
+        li {
+          border: 0;
+          a {
+            font-size: 13px;
+            @include redHover;
+          }
+          .heading {
+            @include fw-600;
+          }
+        }
+        > div {
+          height: fit-content;
+          > div {
+            width: 46%;
+          }
+          img {
+            transition: 0.5s ease;
+          }
+          p,
+          a {
+            font-size: 13px;
+          }
+          h5 {
+            font-size: 24px;
+          }
+          h5,
+          a {
+            font-size: 600;
+          }
+          &:hover {
+            img {
+              scale: (1.1);
+            }
+          }
+          a {
+            @include fw-600;
+            &:hover {
+              background-color: white !important;
+              color: black !important;         
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1119px) {
+    .offcanvas {
+      .offcanvas-body {
+        .dropend {
+          left: 280px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .offcanvas {
+      width: 319px !important;
+      .offcanvas-body {
+        li {
+          .text {
+            font-size: 13px;
+          }
         }
       }
     }
@@ -428,7 +618,7 @@ header {
       opacity: 1;
       transform: translateX(5px);
     }
-    @media screen and (min-width: 768px), (max-width: 991px) {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
       flex-basis: 20%;
     }
     @media screen and (min-width: 1200px) {
@@ -456,11 +646,11 @@ header {
       p {
         font-size: 12px;
         color: #cf600f;
-        font-weight: 600;
+        @include fw-600;
       }
       a {
         font-size: 12px;
-        font-weight: 600;
+        @include fw-600;
         @include hoverBar {
           border-bottom: 1px solid black;
           width: 120%;
@@ -481,13 +671,14 @@ header {
         font-style: italic;
       }
       &:nth-child(2) {
-        font-weight: 600;
+        @include fw-600;
       }
     }
     #last-h2 {
       font-family: "Fahkwang" !important;
-      font-weight: 600;
+      @include fw-600;
       font-style: normal;
+      top: 25px;
     }
 
     span {
@@ -547,7 +738,7 @@ footer {
   }
   h6 {
     font-size: 14px;
-    font-weight: 600;
+    @include fw-600;
   }
   li a,
   p,
@@ -557,9 +748,13 @@ footer {
   p {
     color: rgba(153, 153, 153, 1);
   }
+  a,
+  i {
+    @include redHover;
+  }
   a[href="tel:9239427879"] {
     font-size: 20px;
-    font-weight: 600;
+    @include fw-600;
   }
 
   .light-grey-border {
@@ -582,7 +777,7 @@ footer {
       }
     }
   }
-  .padding-30 {
+  .p-30 {
     padding: 30px;
     > div {
       @media screen and (min-width: 992px) {
@@ -594,16 +789,22 @@ footer {
     }
     a {
       margin-left: 45px;
+      &:hover {
+        color: white !important;
+      }
     }
     i {
       font-size: 30px;
+      &:hover {
+        color: white !important;
+      }
     }
 
     @media screen and (min-width: 992px) {
       gap: 35px;
     }
     @media screen and (min-width: 1200px) {
-      gap: 20px;
+      gap: 0px;
     }
   }
 
@@ -614,7 +815,7 @@ footer {
   }
   .contact {
     font-size: 18px;
-    font-weight: 600;
+    @include fw-600;
   }
 
   .payments {

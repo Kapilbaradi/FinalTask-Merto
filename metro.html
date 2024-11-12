@@ -62,7 +62,7 @@
           >
             <i class="fa-solid fa-bars d-block text-start"></i>
           </button>
-          <a class="navbar-brand col-3 ms-5 col-md-2 ms-md-0 me-md-4" href="#">
+          <a class="navbar-brand col-3 ms-5 col-md-2 ms-md-0 me-md-5" href="#">
             <img
               src="./assests/images/nav/logo.png"
               class="d-block w-100 mx-auto mx-md-0"
@@ -265,9 +265,9 @@
                 <li class="nav-item col-md-12">
                   <div class="col-md-12">
                     <div
-                      class="search d-flex flex-wrap align-items-center position-relative justify-content-center col-md-12 justify-content-lg-end justify-content-xl-start ps-xl-5"
+                      class="search d-flex flex-wrap align-items-center position-relative justify-content-center col-md-12 justify-content-lg-end justify-content-xl-center ps-xl-3 col-xxl-10 px-xxl-5 mx-xxl-auto"
                     >
-                      <div class="row nav-contact align-items-center gap-3">
+                      <div class="d-none d-xl-inline-flex row nav-contact align-items-center gap-3">
                         <div class="col-1">
                           <i
                             class="fa-solid fa-phone col-12 text-black px-0"
@@ -505,16 +505,18 @@
                           class="fa-solid fa-chevron-down d-block position-absolute"
                         ></i>
                       </div>
-                      <input
-                        type="text"
-                        placeholder="Search for products"
-                        class="col-12 col-md-8"
-                      />
-                      <button
-                        class="bg-black text-white rounded d-inline-block position-absolute border-0 p-0 text-center"
-                      >
-                        <i class="fa-solid fa-magnifying-glass d-block"></i>
-                      </button>
+                      <div class="col-12 col-md-8 col-xl position-relative">
+                        <input
+                          type="text"
+                          placeholder="Search for products"
+                          class="col-12"
+                        />
+                        <button
+                          class="bg-black text-white rounded d-inline-block position-absolute border-0 p-0 text-center"
+                        >
+                          <i class="fa-solid fa-magnifying-glass d-block"></i>
+                        </button>
+                      </div>
                     </div>
                     <div
                       class="categories col-12 d-flex flex-wrap pt-4 d-md-none"
@@ -567,31 +569,9 @@
                     </div>
                   </div>
                 </li>
-                <!-- <li class="nav-item d-flex align-items-center ms-auto">
-                  <div
-                    class="d-none d-md-flex gap-3 justify-content-end align-items-center col-md"
-                  >
-                    <i class="fa-solid fa-magnifying-glass d-md-none"></i>
-                    <i class="fa-regular fa-user d-none d-md-block"></i>
-                    <div class="d-none d-md-block position-relative d-flex">
-                      <i class="fa-regular fa-heart"></i>
-                      <span
-                        class="cart-no position-absolute text-white rounded-circle text-center"
-                        >0</span
-                      >
-                    </div>
-                    <div class="position-relative d-flex">
-                      <i class="fa-solid fa-cart-shopping d-block me-2"></i>
-                      <span
-                        class="cart-no position-absolute text-white rounded-circle text-center"
-                        >0</span
-                      >
-                    </div>
-                  </div>
-                </li> -->
               </ul>
               <div
-                class="d-none d-md-flex gap-3 justify-content-end align-items-center col-md-3 col-xl-4"
+                class="d-none d-md-flex gap-3 justify-content-end align-items-center col-md-3 col-xl-5 col-xxl-3"
               >
                 <div class="d-none d-xl-inline-block">
                   <div class="dropdown info-block">
@@ -662,7 +642,9 @@
                   <i
                     class="fa-regular fa-user d-none d-md-inline-block me-lg-1"
                   ></i>
-                  <span class="account align-middle">Account</span>
+                  <span class="d-none d-xl-inline-block account align-middle"
+                    >Account</span
+                  >
                 </div>
                 <div class="d-none d-md-block position-relative d-flex me-lg-1">
                   <i class="fa-regular fa-heart"></i>
@@ -684,7 +666,7 @@
         </div>
       </nav>
       <hr class="d-none d-md-block text-body-tertiary my-0" />
-      <nav class="navbar navbar-expand-md py-lg-2" id="navTwo">
+      <nav class="navbar navbar-expand-md py-lg-2 py-xl-0" id="navTwo">
         <div class="container">
           <div
             class="offcanvas offcanvas-start"
@@ -711,8 +693,10 @@
               ></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto mb-2 align-items-md-center mb-md-0">
-                <li class="nav-item d-none d-md-block me-1">
+              <ul
+                class="navbar-nav me-auto mb-2 align-items-md-center mb-md-0 col-lg-12"
+              >
+                <li class="nav-item d-none d-md-block me-1 pe-xl-4 shop">
                   <button
                     class="nav-link ps-0"
                     type="button"
@@ -724,7 +708,7 @@
                       class="fa-solid fa-bars d-inline-block text-black me-lg-1"
                     ></i>
                     <span
-                      class="d-none d-lg-inline-block text-black text-uppercase"
+                      class="categories d-none d-lg-inline-block text-black text-uppercase"
                       >Shop by categories</span
                     >
                   </button>
@@ -740,304 +724,220 @@
                   ></a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link d-flex justify-content-between"
-                    href="#"
-                    data-mdb-dropdown-init
-                    class="nav-link dropdown-toggle"
-                    id="navbarDropdown"
-                    role="button"
-                    data-mdb-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link d-flex justify-content-between" href="#">
                     <span>Categories</span> <span class="d-md-none">+</span
                     ><span class="d-none d-md-block ms-1"
                       ><i class="fa-solid fa-angle-down align-middle"></i
                     ></span>
-                    <div
-                      class="dropdown-menu w-100 mt-0"
-                      aria-labelledby="navbarDropdown"
-                      style="
-                        border-top-left-radius: 0;
-                        border-top-right-radius: 0;
-                      "
-                    >
-                      <div class="container fluid">
-                        <div class="row my-4">
-                          <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                            <div class="list-group list-group-flush">
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Lorem ipsum</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Dolor sit</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Amet consectetur</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Cras justo odio</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Adipisicing elit</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                            <div class="list-group list-group-flush">
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Explicabo voluptas</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Perspiciatis quo</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Cras justo odio</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Laudantium maiores</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Provident dolor</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
-                            <div class="list-group list-group-flush">
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Iste quaerato</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Cras justo odio</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Est iure</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Praesentium</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Laboriosam</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-lg-3">
-                            <div class="list-group list-group-flush">
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Cras justo odio</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Saepe</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Vel alias</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Sunt doloribus</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Cum dolores</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </a>
+                  <!-- Mega menu -->
+                  <ul class="dropdown-menu container-fluid nav-cate">
+                    <li class="row mt-0">
+                      <ul class="col-3">
+                        <div class="row gap-4">
+                          <ul class="col-12">
+                            <li class="mt-0">
+                              <a class="heading text-uppercase ps-0" href="#"
+                                >Shop layouts</a
+                              >
+                            </li>
+                            <li><a href="#">Top Categories - Style 1</a></li>
+                            <li><a href="#">Top Categories - Style 2</a></li>
+                            <li><a href="#">Top Brands</a></li>
+                            <li><a href="#">List Layout</a></li>
+                            <li><a href="#">Callapse Scroll Sidebar</a></li>
+                            <li><a href="#">Filter Sidebar</a></li>
+                            <li><a href="#">Top Banner</a></li>
+                            <li><a href="#">Bottmo Banner</a></li>
+                          </ul>
+                        </div>
+                      </ul>
+                      <ul class="col-3">
+                        <div class="row gap-4">
+                          <ul class="col-12">
+                            <li class="mt-0">
+                              <a href="#" class="heading text-uppercase"
+                                >shop layouts</a
+                              >
+                            </li>
+                            <li><a href="#">Load More Button</a></li>
+                            <li><a href="#">TInfinity Scroll</a></li>
+                            <li><a href="#">Ajax Pagination</a></li>
+                            <li><a href="#">Supermarket</a></li>
+                            <li><a href="#">Furniture</a></li>
+                            <li><a href="#">Electronic</a></li>
+                            <li><a href="#">Autopart</a></li>
+                            <li><a href="#">Cosmetic</a></li>
+                          </ul>
+                        </div>
+                      </ul>
+                      <ul class="col-6">
+                        <div class="row">
+                          <img
+                            src="./assests/images/nav/categories/mega-shop-layout.png"
+                            alt=""
+                            class="col-12"
+                          />
+                        </div>
+                      </ul>
+                    </li>
+                  </ul>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item position-relative product">
                   <a class="nav-link d-flex justify-content-between" href="#">
                     <span>Products</span> <span class="d-md-none">+</span
                     ><span class="d-none d-md-block ms-1"
                       ><i class="fa-solid fa-angle-down align-middle"></i></span
                   ></a>
+                  <ul class="dropdown-menu">
+                    <li class="row mt-0">
+                      <ul class="col-12">
+                        <li class="mt-0">
+                          <a href="#">Simple product</a>
+                        </li>
+                        <li><a href="#">Variable - Label Attribute</a></li>
+                        <li><a href="#">Variable - Dropdown Attribute</a></li>
+                        <li><a href="#">Variable - Color Swatch</a></li>
+                        <li><a href="#">Variable - Variation Thumbnail</a></li>
+                        <li><a href="#">Group product</a></li>
+                        <li><a href="#">External product</a></li>
+                        <li><a href="#">Vertical thumbnail</a></li>
+                        <li><a href="#">Horizontal thumbnail</a></li>
+                        <li><a href="#">Summary scrolling</a></li>
+                        <li><a href="#">Flash sale</a></li>
+                        <li><a href="#">Video + 360 degree</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </li>
-                <li class="nav-item dropdown dropdown-hover position-static">
-                  <a
-                    class="nav-link d-flex justify-content-between"
-                    href="#"
-                    data-mdb-dropdown-init
-                    class="nav-link dropdown-toggle"
-                    id="navbarDropdown"
-                    role="button"
-                    data-mdb-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                <li class="nav-item">
+                  <a class="nav-link d-flex justify-content-between" href="#">
                     <span>Pages</span> <span class="d-md-none">+</span
                     ><span class="d-none d-md-block ms-1"
                       ><i class="fa-solid fa-angle-down align-middle"></i
                     ></span>
-                    <!-- Mega menu -->
-                    <div
-                      class="dropdown-menu w-100 mt-0"
-                      aria-labelledby="navbarDropdown"
-                      style="
-                        border-top-left-radius: 0;
-                        border-top-right-radius: 0;
-                      "
-                    >
-                      <div class="container fluid">
-                        <div class="row my-4">
-                          <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                            <div class="list-group list-group-flush">
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Lorem ipsum</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Dolor sit</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Amet consectetur</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Cras justo odio</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Adipisicing elit</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                            <div class="list-group list-group-flush">
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Explicabo voluptas</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Perspiciatis quo</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Cras justo odio</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Laudantium maiores</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Provident dolor</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
-                            <div class="list-group list-group-flush">
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Iste quaerato</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Cras justo odio</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Est iure</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Praesentium</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Laboriosam</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-lg-3">
-                            <div class="list-group list-group-flush">
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Cras justo odio</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Saepe</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Vel alias</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Sunt doloribus</a
-                              >
-                              <a
-                                href=""
-                                class="list-group-item list-group-item-action"
-                                >Cum dolores</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </a>
+                  <!-- Mega menu -->
+                  <ul class="dropdown-menu container-fluid">
+                    <li class="row mt-0">
+                      <ul class="col-3">
+                        <div class="row gap-4">
+                          <ul class="col-12">
+                            <li class="mt-0">
+                              <a class="heading text-uppercase ps-0" href="#"
+                                >HomePages</a
+                              >
+                            </li>
+                            <li><a href="#">Home Supermarket 01</a></li>
+                            <li><a href="#">Home Supermarket 02</a></li>
+                            <li><a href="#">Home Furniture</a></li>
+                            <li><a href="#">Home Electronic</a></li>
+                            <li><a href="#">Home Autopart</a></li>
+                            <li><a href="#">Home Cosmetic</a></li>
+                          </ul>
+                          <ul class="col-12">
+                            <li class="mt-0">
+                              <a href="#" class="heading text-uppercase"
+                                >Orther Pages</a
+                              >
+                            </li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Comming soon</a></li>
+                          </ul>
+                        </div>
+                      </ul>
+                      <ul class="col-3">
+                        <div class="row gap-4">
+                          <ul class="col-12">
+                            <li class="mt-0">
+                              <a href="#" class="heading text-uppercase"
+                                >Supermarket - shop</a
+                              >
+                            </li>
+                            <li><a href="#">Top Categories - style 1</a></li>
+                            <li><a href="#">Top Categories - style 2</a></li>
+                            <li><a href="#">Top Brand</a></li>
+                            <li><a href="#">Shop - list</a></li>
+                            <li><a href="#">Shop - scroll</a></li>
+                          </ul>
+                          <ul class="col-12">
+                            <li class="mt-0">
+                              <a href="#" class="heading text-uppercase"
+                                >Furniture - shop</a
+                              >
+                            </li>
+                            <li><a href="#">Top Categories - style 1</a></li>
+                            <li><a href="#">Top Categories - style 2</a></li>
+                            <li><a href="#">Top Brand</a></li>
+                          </ul>
+                        </div>
+                      </ul>
+                      <ul class="col-3">
+                        <div class="row gap-4">
+                          <ul class="col-12">
+                            <li class="mt-0">
+                              <a href="#" class="heading text-uppercase"
+                                >Electronic - shop</a
+                              >
+                            </li>
+                            <li><a href="#">Top Categories - style 1</a></li>
+                            <li><a href="#">Top Brand</a></li>
+                          </ul>
+                          <ul class="col-12">
+                            <li class="mt-0">
+                              <a href="#" class="heading text-uppercase"
+                                >Automotive - shop</a
+                              >
+                            </li>
+                            <li><a href="#">Top Categories - style 1</a></li>
+                            <li><a href="#">Top Categories - style 2</a></li>
+                            <li><a href="#">Top Brand</a></li>
+                          </ul>
+                          <ul class="col-12">
+                            <li class="mt-0">
+                              <a href="#" class="heading text-uppercase"
+                                >Cosmetics - shop</a
+                              >
+                            </li>
+                            <li><a href="#">Top Categories - style 1</a></li>
+                            <li><a href="#">Top Categories - style 2</a></li>
+                            <li><a href="#">Top Brand</a></li>
+                          </ul>
+                        </div>
+                      </ul>
+                      <ul class="col-3">
+                        <div class="row">
+                          <ul class="col-12">
+                            <li class="mt-0">
+                              <a href="#" class="heading text-uppercase"
+                                >Product Page</a
+                              >
+                            </li>
+                            <li><a href="#">Simple product</a></li>
+                            <li>
+                              <a href="#">Variable - Label Attribute</a>
+                            </li>
+                            <li>
+                              <a href="#">Variable - Dropdown Attribute</a>
+                            </li>
+                            <li><a href="#">Variable - Color Swatch</a></li>
+                            <li>
+                              <a href="#">Variable - Variation Thumbnail</a>
+                            </li>
+                            <li><a href="#">Group product</a></li>
+                            <li><a href="#">External product</a></li>
+                            <li><a href="#">Vertical thumbnail</a></li>
+                            <li><a href="#">Horizontal thumbnail</a></li>
+                            <li><a href="#">Summary Scrolling</a></li>
+                            <li><a href="#">Flash Sale</a></li>
+                            <li><a href="#">Video + 360 degree</a></li>
+                          </ul>
+                        </div>
+                      </ul>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"> <span>About us</span></a>
@@ -1053,11 +953,478 @@
                     ></a
                   >
                 </li>
-                <li class="nav-item d-md-none">
+                <li class="nav-item d-md-none d-xl-inline-block ms-xl-auto">
                   <a class="nav-link d-flex justify-content-between" href="#">
-                    <span class="text-body-tertiary">Recently viewed</span>
-                    <span class="text-body-tertiary d-md-none">+</span></a
-                  >
+                    <span class="text-body-tertiary recent">Recently viewed</span>
+                    <span class="text-body-tertiary d-md-none">+</span
+                    ><span class="d-none d-md-block ms-1"
+                      ><i class="fa-solid fa-angle-down align-middle"></i></span
+                  ></a>
+                  <div class="dropdown-menu container-fluid">
+                    <div class="row mt-0">
+                      <div class="col-xxl-2 border">
+                        <div class="p-3">
+                          <div class="row">
+                            <div
+                              class="viewed-product col-12 position-relative"
+                            >
+                              <img
+                                src="./assests/images/recently-viewed/automotive-11-300x300.jpg"
+                                alt=""
+                                class="w-100 d-block"
+                              />
+                              <div class="discount position-absolute">
+                                <p class="text-white my-0 text-center">-8%</p>
+                              </div>
+                              <div
+                                class="position-absolute top-0 end-0 d-flex flex-column gap-1"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-light px-0"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Wishlist"
+                                  style="--i: 0"
+                                >
+                                  <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Compare"
+                                  style="--i: 1"
+                                >
+                                  <i
+                                    class="fa-solid fa-arrow-right-arrow-left"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Quick View"
+                                  style="--i: 2"
+                                >
+                                  <i
+                                    class="fa-solid fa-magnifying-glass d-block"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Add to cart"
+                                  style="--i: 3"
+                                >
+                                  <i
+                                    class="fa-solid fa-cart-shopping d-block me-2"
+                                  ></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <p>TOOLS 34 Low Profile Hydraulic Trolley</p>
+                              <p>
+                                $767
+                                <span
+                                  class="text-decoration-line-through text-body-tertiary"
+                                  >$837</span
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-2 border">
+                        <div class="p-3">
+                          <div class="row">
+                            <div
+                              class="viewed-product col-12 position-relative"
+                            >
+                              <img
+                                src="./assests/images/recently-viewed/electronic-58.jpg"
+                                alt=""
+                                class="w-100 d-block"
+                              />
+                              <div
+                                class="position-absolute top-0 end-0 d-flex flex-column gap-1"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-light px-0"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Wishlist"
+                                  style="--i: 0"
+                                >
+                                  <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Compare"
+                                  style="--i: 1"
+                                >
+                                  <i
+                                    class="fa-solid fa-arrow-right-arrow-left"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Quick View"
+                                  style="--i: 2"
+                                >
+                                  <i
+                                    class="fa-solid fa-magnifying-glass d-block"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Add to cart"
+                                  style="--i: 3"
+                                >
+                                  <i
+                                    class="fa-solid fa-cart-shopping d-block me-2"
+                                  ></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <p>Apple iPhone 11 Pro, 256GB Black - Fully Unclocked</p>
+                              <p>
+                                $352
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-2 border">
+                        <div class="p-3">
+                          <div class="row">
+                            <div
+                              class="viewed-product col-12 position-relative"
+                            >
+                              <img
+                                src="./assests/images/recently-viewed/electronic-30-6-300x300.jpg"
+                                alt=""
+                                class="w-100 d-block"
+                              />
+                              <div class="discount position-absolute">
+                                <p class="text-white my-0 text-center">-8%</p>
+                              </div>
+                              <div
+                                class="position-absolute top-0 end-0 d-flex flex-column gap-1"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-light px-0"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Wishlist"
+                                  style="--i: 0"
+                                >
+                                  <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Compare"
+                                  style="--i: 1"
+                                >
+                                  <i
+                                    class="fa-solid fa-arrow-right-arrow-left"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Quick View"
+                                  style="--i: 2"
+                                >
+                                  <i
+                                    class="fa-solid fa-magnifying-glass d-block"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Add to cart"
+                                  style="--i: 3"
+                                >
+                                  <i
+                                    class="fa-solid fa-cart-shopping d-block me-2"
+                                  ></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <p>TOOLS 34 Low Profile Hydraulic Trolley</p>
+                              <p>
+                                $767
+                                <span
+                                  class="text-decoration-line-through text-body-tertiary"
+                                  >$837</span
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-2 border">
+                        <div class="p-3">
+                          <div class="row">
+                            <div
+                              class="viewed-product col-12 position-relative"
+                            >
+                              <img
+                                src="./assests/images/recently-viewed/electronic-1-300x300.jpg"
+                                alt=""
+                                class="w-100 d-block"
+                              />
+                              <div class="discount position-absolute">
+                                <p class="text-white my-0 text-center">-8%</p>
+                              </div>
+                              <div
+                                class="position-absolute top-0 end-0 d-flex flex-column gap-1"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-light px-0"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Wishlist"
+                                  style="--i: 0"
+                                >
+                                  <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Compare"
+                                  style="--i: 1"
+                                >
+                                  <i
+                                    class="fa-solid fa-arrow-right-arrow-left"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Quick View"
+                                  style="--i: 2"
+                                >
+                                  <i
+                                    class="fa-solid fa-magnifying-glass d-block"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Add to cart"
+                                  style="--i: 3"
+                                >
+                                  <i
+                                    class="fa-solid fa-cart-shopping d-block me-2"
+                                  ></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <p>TOOLS 34 Low Profile Hydraulic Trolley</p>
+                              <p>
+                                $767
+                                <span
+                                  class="text-decoration-line-through text-body-tertiary"
+                                  >$837</span
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-2 border">
+                        <div class="p-3">
+                          <div class="row">
+                            <div
+                              class="viewed-product col-12 position-relative"
+                            >
+                              <img
+                                src="./assests/images/recently-viewed/automotive-11-300x300.jpg"
+                                alt=""
+                                class="w-100 d-block"
+                              />
+                              <div class="discount position-absolute">
+                                <p class="text-white my-0 text-center">-8%</p>
+                              </div>
+                              <div
+                                class="position-absolute top-0 end-0 d-flex flex-column gap-1"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-light px-0"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Wishlist"
+                                  style="--i: 0"
+                                >
+                                  <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Compare"
+                                  style="--i: 1"
+                                >
+                                  <i
+                                    class="fa-solid fa-arrow-right-arrow-left"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Quick View"
+                                  style="--i: 2"
+                                >
+                                  <i
+                                    class="fa-solid fa-magnifying-glass d-block"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Add to cart"
+                                  style="--i: 3"
+                                >
+                                  <i
+                                    class="fa-solid fa-cart-shopping d-block me-2"
+                                  ></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <p>TOOLS 34 Low Profile Hydraulic Trolley</p>
+                              <p>
+                                $767
+                                <span
+                                  class="text-decoration-line-through text-body-tertiary"
+                                  >$837</span
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-2 border">
+                        <div class="p-3">
+                          <div class="row">
+                            <div
+                              class="viewed-product col-12 position-relative"
+                            >
+                              <img
+                                src="./assests/images/recently-viewed/electronic-76.jpg"
+                                alt=""
+                                class="w-100 d-block"
+                              />
+                              <div class="discount position-absolute">
+                                <p class="text-white my-0 text-center">-8%</p>
+                              </div>
+                              <div
+                                class="position-absolute top-0 end-0 d-flex flex-column gap-1"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-light px-0"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Wishlist"
+                                  style="--i: 0"
+                                >
+                                  <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Compare"
+                                  style="--i: 1"
+                                >
+                                  <i
+                                    class="fa-solid fa-arrow-right-arrow-left"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Quick View"
+                                  style="--i: 2"
+                                >
+                                  <i
+                                    class="fa-solid fa-magnifying-glass d-block"
+                                  ></i>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-light"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="left"
+                                  data-bs-title="Add to cart"
+                                  style="--i: 3"
+                                >
+                                  <i
+                                    class="fa-solid fa-cart-shopping d-block me-2"
+                                  ></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <p>TOOLS 34 Low Profile Hydraulic Trolley</p>
+                              <p>
+                                $767
+                                <span
+                                  class="text-decoration-line-through text-body-tertiary"
+                                  >$837</span
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <hr class="bg-body-tertiary d-md-none" />
                 <div class="d-md-none">
@@ -1138,6 +1505,7 @@
         </div>
       </nav>
     </header>
+    <hr class="d-none d-xl-block text-body-tertiary my-0" />
     <!-- --------------- SideBar ---------------------- -->
     <div id="sidebar" class="sideBar position-fixed top-0 start-0 bottom-0">
       <div
@@ -1153,7 +1521,7 @@
             Shop by categories
           </h5>
         </div>
-        <div class="offcanvas-body p-0">
+        <div class="offcanvas-body p-0 border-end">
           <ul class="px-0">
             <li class="list-unstyled px-3">
               <a
@@ -1166,9 +1534,146 @@
                     alt=""
                     class="w-100"
                 /></span>
-                <span>Fashion</span>
+                <span class="text">Fashion</span>
                 <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
               </a>
+              <div class="row dropend overflow-hidden">
+                <ul class="col-6">
+                  <li class="list-unstyled my-3 mt-0">
+                    <a
+                      href="#"
+                      class="heading text-uppercase text-decoration-none text-black"
+                      >Women</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Accessories</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Blazers</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Coat & Jackets</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Dress</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Shirts</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Shoes</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Shorts</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Skirts</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Sweatshirts</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black">Tops</a>
+                  </li>
+                </ul>
+                <ul class="col-6">
+                  <li class="list-unstyled my-3 mt-0">
+                    <a
+                      href="#"
+                      class="heading text-uppercase text-decoration-none text-black"
+                      >Men</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Accessories</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Blazers</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Hoodies</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Jackets & Coats</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Jeans</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Joggers</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Polo shirts</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Shirts</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Shoes</a
+                    >
+                  </li>
+                  <li class="list-unstyled my-2">
+                    <a href="#" class="text-decoration-none text-black"
+                      >Short</a
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="col-12 position-relative rounded overflow-hidden px-0 mx-2"
+                >
+                  <img
+                    src="./assests/images/nav/showByCategories/banner-vertical-menu-fashion.jpg"
+                    alt=""
+                    class="w-100 rounded d-block"
+                  />
+                  <div class="position-absolute top-0 left-0 p-4">
+                    <p class="text-white mb-1">New Collection</p>
+                    <h5 class="text-white">Bobby Caro Dress</h5>
+                    <a
+                      href="#"
+                      class="btn border border-white rounded text-uppercase text-white px-3 py-2"
+                    >
+                      Shop Now
+                    </a>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="list-unstyled px-3">
               <a
@@ -1181,7 +1686,7 @@
                     alt=""
                     class="w-100"
                 /></span>
-                <span>Phone & Tablet</span>
+                <span class="text">Phone & Tablet</span>
                 <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
               </a>
             </li>
@@ -1196,7 +1701,7 @@
                     alt=""
                     class="w-100"
                 /></span>
-                <span>Laptop & Computer</span>
+                <span class="text">Laptop & Computer</span>
                 <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
               </a>
             </li>
@@ -1211,7 +1716,7 @@
                     alt=""
                     class="w-100"
                 /></span>
-                <span>Tv, Audio - Video</span>
+                <span class="text">Tv, Audio - Video</span>
                 <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
               </a>
             </li>
@@ -1226,7 +1731,7 @@
                     alt=""
                     class="w-100"
                 /></span>
-                <span>Camera & Photo</span>
+                <span class="text">Camera & Photo</span>
               </a>
             </li>
             <li class="list-unstyled px-3">
@@ -1240,7 +1745,7 @@
                     alt=""
                     class="w-100"
                 /></span>
-                <span>Home & Decore</span>
+                <span class="text">Home & Decore</span>
                 <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
               </a>
             </li>
@@ -1255,7 +1760,7 @@
                     alt=""
                     class="w-100"
                 /></span>
-                <span>Beauty & Health</span>
+                <span class="text">Beauty & Health</span>
                 <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
               </a>
             </li>
@@ -1270,7 +1775,7 @@
                     alt=""
                     class="w-100"
                 /></span>
-                <span>Game Accessories</span>
+                <span class="text">Game Accessories</span>
               </a>
             </li>
             <li class="list-unstyled px-3">
@@ -1284,7 +1789,7 @@
                     alt=""
                     class="w-100"
                 /></span>
-                <span>Autopart</span>
+                <span class="text">Autopart</span>
                 <i class="fa-solid fa-angle-right d-inline-block ms-auto"></i>
               </a>
             </li>
@@ -1293,89 +1798,8 @@
       </div>
     </div>
 
-    <!-- ---------------- Banner Section ----------------------- -->
-    <!-- <div class="container-fluid p-0">
-      <div class="row">
-        <div class="col-12">
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active rounded-circle"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                class="rounded-circle"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                class="rounded-circle"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./assests/images/banner-section/slide1-demo1.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./assests/images/banner-section/slide2-demo1.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./assests/images/banner-section/slide3-demo1.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12"></div>
-      </div>
-    </div> -->
-
     <!-- ------------------------- Product Slider ---------------------------- -->
-    <div class="container wrapper">
+    <div class="container wrapper py-3">
       <div class="product-slider slider row overflow-x-hidden flex-nowrap">
         <div
           class="col-4 col-sm-3 col-lg-2 col-xl position-relative"
@@ -1636,8 +2060,8 @@
           <div
             class="position-absolute d-flex align-items-end justify-content-center"
           >
-            <div class="col-12 p-4">
-              <h2 id="last-h2" class="col text-white text-center mb-0">
+            <div class="col-12 p-4 position-relative">
+              <h2 id="last-h2" class="col text-white text-center mb-0 position-absolute start-0 end-0">
                 Steals under $25
               </h2>
               <span class="col-12 d-inline-block text-center">Beauty</span>
@@ -1893,7 +2317,7 @@
           </div>
         </div>
         <div
-          class="padding-30 row justify-content-center light-grey-border mx-0 justify-content-lg-end justify-content-xl-center"
+          class="p-30 row justify-content-center light-grey-border mx-0 justify-content-lg-end justify-content-xl-center"
         >
           <div
             class="col-12 d-flex flex-column my-2 mb-4 px-0 col-md-4 my-md-0 mb-lg-2"
